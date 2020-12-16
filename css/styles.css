@@ -747,7 +747,7 @@ section .section-wrap.dashboard-section g[aria-controls=id-225][aria-checked="tr
     }
     .wrapper-body section .packages-switch-btns-bar .package-item {
         width: 100%;
-        margin: 20px;
+        margin: 0 0 20px 0;
     }
     .wrapper-body section .packages-switch-btns-bar .package-name{
         width: initial;
