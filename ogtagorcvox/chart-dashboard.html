@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #chartdiv {
+            width: 100%;
+            max-width: 1000px;
+            height: 500px;
+            background: #FFFFFF 0 0 no-repeat padding-box;
+            box-shadow: 0 0 20px #0000001A;
+            border-radius: 4px;
+            opacity: 1;
+        }
+
+        g[aria-labelledby=id-66-title] {
+            display: none;
+        }
+
+        g[aria-label=Series] {
+            transform: rotate(-27deg);
+        }
+
+        g[aria-label=Series ] textPath {
+            display: none
+        }
+
+
+        g text {
+            font: normal normal 600 16px/27px Segoe UI, sans-serif;
+
+        }
+
+        /******************************/
+        #id-122 {
+            fill: #142A33;
+        }
+
+        g[aria-controls=id-122][aria-checked="true"] g > g > g > g path {
+            fill: #142A33;
+            stroke: #142A33;
+        }
+
+        g[aria-controls=id-122][aria-checked="true"] g text {
+            fill: #142A33;
+        }
+
+        /******************************/
+        #id-157 {
+            fill: #8CC715;
+        }
+
+        g[aria-controls=id-157][aria-checked="true"] g > g > g > g path {
+            fill: #8CC715;
+            stroke: #8CC715;
+        }
+
+        g[aria-controls=id-157][aria-checked="true"] g text {
+            fill: #8CC715;
+        }
+
+        /******************************/
+
+        #id-191 {
+            fill: #459290;
+        }
+
+        g[aria-controls=id-191][aria-checked="true"] g > g > g > g path {
+            fill: #459290;
+            stroke: #459290;
+        }
+
+        g[aria-controls=id-191][aria-checked="true"] g text {
+            fill: #459290;
+        }
+
+        /******************************/
+        #id-225 {
+            fill: #A7E1E1;
+
+        }
+
+        g[aria-controls=id-225][aria-checked="true"] g > g > g > g path {
+            fill: #A7E1E1;
+            stroke: #A7E1E1;
+        }
+
+        g[aria-controls=id-225][aria-checked="true"] g text {
+            fill: #A7E1E1;
+        }
+        /******************************/
+
+        @media (max-width: 992px) {
+            #chartdiv {
+                max-width: 660px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+<!-- Styles -->
+
+
+<!-- HTML -->
+<div id="chartdiv"></div>
+</body>
+<!-- Resources -->
+<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+
+<!-- Chart code -->
+<script>
+    am4core.ready(function () {
+
+// Themes begin
+        am4core.useTheme(am4themes_animated);
+// Themes end
+
+// Create chart instance
+        let chart = am4core.create("chartdiv", am4charts.PieChart);
+
+// Add and configure Series
+        let pieSeries = chart.series.push(new am4charts.PieSeries());
+        pieSeries.dataFields.value = "litres";
+        pieSeries.dataFields.category = "country";
+
+// Let's cut a hole in our Pie chart the size of 30% the radius
+        chart.innerRadius = am4core.percent(60);
+
+        pieSeries.slices.template
+            // change the cursor on hover to make it apparent the object can be interacted with
+            .cursorOverStyle = [
+            {
+                "property": "cursor",
+                "value": "pointer"
+            }
+        ];
+
+        pieSeries.alignLabels = false;
+        pieSeries.labels.template.bent = true;
+        pieSeries.labels.template.radius = 3;
+        pieSeries.labels.template.padding(0, 0, 0, 0);
+        pieSeries.ticks.template.disabled = true;
+        pieSeries.slices.template.tooltipText = "";
+
+// Create a base filter effect (as if it's not there) for the hover to return to
+        let shadow = pieSeries.slices.template.filters.push(new am4core.DropShadowFilter);
+        shadow.opacity = 0;
+
+// Create hover state
+        let hoverState = pieSeries.slices.template.states.getKey("hover"); // normally we have to create the hover state, in this case it already exists
+
+// Slightly shift the shadow and make it more prominent on hover
+        let hoverShadow = hoverState.filters.push(new am4core.DropShadowFilter);
+        hoverShadow.opacity = 0.7;
+        hoverShadow.blur = 5;
+
+// Add a legend
+        chart.legend = new am4charts.Legend();
+
+        chart.data = [{
+            "country": "Platinum Package",
+            "litres": 15
+        }, {
+            "country": "Bronze Package",
+            "litres": 20
+        }, {
+            "country": "Gold Package",
+            "litres": 35
+        }, {
+            "country": "Silver Package",
+            "litres": 30
+        }];
+
+    }); // end am4core.ready()
+</script>
+
+</html>

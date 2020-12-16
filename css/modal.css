@@ -1,0 +1,207 @@
+/* My Modal Global Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+    overflow: auto;
+    background-color: #00000045;
+    animation-duration: 0.35s;
+    animation-fill-mode: both;
+    animation-name: fadeIn;
+}
+
+.modal__dialog {
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 0 8px #00000029;
+    margin: auto;
+    border-radius: 3px;
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    opacity: 1;
+    box-sizing: border-box;
+
+}
+
+.modal__close img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.modal.is-modal-active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.modal__btn {
+    text-decoration: none;
+    transition: all .25s linear;
+    cursor: pointer;
+}
+
+.modal__btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.modal__btn:focus,
+.modal__btn:active {
+    outline: 0;
+}
+.modal__content {
+    max-width: 380px;
+    margin: 50px;
+}
+
+.modal h2.modal__title {
+    text-align: center;
+    font: normal normal bold 24px/29px Campton DEMO;
+    font-family: "Campton-BoldDEMO", sans-serif;
+    letter-spacing: 0;
+    color: #000000;
+    text-transform: capitalize;
+    opacity: 1;
+    margin: 0 0 8px 0;
+}
+
+.modal p.modal__description {
+    text-align: center;
+    font: normal normal 300 16px/19px Campton DEMO;
+    font-family: "Campton-LightDEMO", sans-serif;
+    letter-spacing: 0;
+    color: #39393B;
+    opacity: 0.5;
+    margin: 0;
+}
+
+.modal label {
+    text-align: left;
+    font: normal normal 300 16px/19px Campton DEMO;
+    font-family: "Campton-LightDEMO", sans-serif;
+    letter-spacing: 0;
+    color: #000000;
+    text-transform: capitalize;
+    opacity: 1;
+    margin: 0 0 4px 0;
+    display: block;
+}
+
+.modal .modal__content .txt-area-bar {
+    margin: 30px 0 0 0;
+}
+
+.modal .modal__content .txt-area-bar textarea {
+    max-width: 100%;
+    text-align: left;
+    font: normal normal 300 16px/19px Campton DEMO;
+    font-family: "Campton-LightDEMO", sans-serif;
+    letter-spacing: 0;
+    color: rgba(0, 0, 0, .4);
+    border: 1px solid rgba(0, 0, 0, .4);
+    padding: 17px 15px;
+    min-width: 380px;
+    min-height: 147px;
+    max-height: 147px;
+}
+
+/* Thanks for your feedback */
+.modal.thanks-your-feedback .modal__content > .icon-bar {
+    max-width: 80px;
+    margin: 0 auto 30px;
+}
+
+.modal.thanks-your-feedback .modal__content > .icon-bar img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.modal.thanks-your-feedback .modal__content > div.d-f {
+    margin: 26px 0 0 0;
+    padding: 26px 0 0 0;
+    border-top: 1px solid #EBEBEB;
+    display: flex;
+}
+
+.modal.thanks-your-feedback .modal__content > div.d-f h5 {
+    text-align: left;
+    font: normal normal 300 16px/19px Campton DEMO;
+    font-family: "Campton-LightDEMO", sans-serif;
+    letter-spacing: 0;
+    color: #000000;
+    text-transform: capitalize;
+    opacity: 1;
+    margin: 0 0 4px 0;
+}
+.modal.thanks-your-feedback .modal__content > div.d-f img{
+    margin-right: 10px;
+}
+.modal.thanks-your-feedback .modal__content > div.d-f span {
+    text-align: left;
+    font: normal normal 300 14px/17px Campton DEMO;
+    font-family: "Campton-LightDEMO", sans-serif;
+    letter-spacing: 0;
+    color: #A3A7AB;
+    opacity: 1;
+    margin: 0;
+}
+
+.modal.thanks-your-feedback .modal__content button.site-btn-style {
+    width: 100%;
+}
+
+/*Are you sure you want to Stop the task?*/
+.modal.stop-task .modal__content h2.modal__title {
+    margin: 0 auto 8px;
+    max-width: 270px;
+}
+
+
+/* Are you sure you want to cancel ? */
+.modal.want-cancel .modal__content .btns-bar,
+.modal.delete-convers .modal__content .btns-bar {
+    margin-top: 40px;
+}
+
+
+/* Report Or Block User */
+.modal.block-user .checkbox-bar{
+    margin: 20px 0 0 0;
+}
+.modal.block-user h2.modal__title{
+    text-align: left;
+}
+
+/*
+.modal.block-user .checkBox-btn-styles input:checked + label {
+    color: #D4B86C;
+}
+*/
+
+.modal.block-user .checkbox-bar > div {
+    margin-bottom: 15px;
+}
+
+.modal.block-user .checkbox-bar > div:last-child {
+    margin-bottom: 0;
+}
+
+.modal.block-user .checkbox-bar .checkBox-btn-styles .checkbox {
+    width: 20px;
+    height: 20px;
+}

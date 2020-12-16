@@ -1,0 +1,681 @@
+
+
+/* Changes Image */
+
+.full-screen-modal h2.modal__title {
+    text-align: left;
+    font: normal normal normal 24px/26px Roboto;
+    font-family: "RobotoRegular", sans-serif;
+    letter-spacing: 0;
+    color: #142A33;
+    opacity: 1;
+    margin: 0 0 20px 0;
+}
+
+.full-screen-modal p.modal__description {
+    font: normal normal normal 16px/24px Roboto;
+    font-family: RobotoRegula, sans-serif;
+    letter-spacing: 0;
+    color: #39393B;
+    text-align: left;
+    opacity: 1;
+    max-width: 90%;
+    margin: 0 0 30px 0;
+}
+
+.full-screen-modal {
+    padding: 0;
+}
+
+.full-screen-modal .modal__dialog {
+    max-width: 1330px;
+    height: 100%;
+    max-height: 770px;
+    position: relative;
+}
+
+/*.full-screen-modal .modal__header {
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 10px 0 0;
+    z-index: 999;
+}*/
+.full-screen-modal .modal__body .form-banner > div .light-btn-style {
+    border: 1px solid #142A33;
+    color: #142A33;
+}
+/*.full-screen-modal .modal__header button.modal__close {
+    width: 40px;
+    box-shadow: 0 0 2px #142A33;
+    border: 2px solid rgba(20,42,51,.7);
+    background-color: transparent;
+    padding: 7px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.full-screen-modal .modal__header button.modal__close:hover img {
+    opacity: 1
+}
+
+.full-screen-modal .modal__header .modal__close img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    opacity: .9;
+    transition: .1s ease;
+}*/
+
+.full-screen-modal .modal__content {
+    max-width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+}
+
+.full-screen-modal .modal__content > div {
+    position: relative;
+    width: 100%;
+}
+
+.full-screen-modal .modal__content .modal__content-aside-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.full-screen-modal .modal__content .modal__content-aside-left .logo-bar img{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.full-screen-modal .modal__content .modal__content-aside-right .modal__body {
+    /*width: 380px;*/
+    /*max-width: 380px;*/
+    max-width: 100%;
+    height: auto;
+}
+
+.full-screen-modal .modal__content .modal__content-aside-left {
+background-color: #142A33;
+    max-width: 460px;
+}
+
+.full-screen-modal .modal__content .modal__content-aside-left .modal__body {
+    height: max-content;
+    max-width: 715px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.full-screen-modal .modal__content .modal__content-aside-left .logo-bar {
+    width: 280px;
+    height: 80px;
+    margin: auto;
+}
+
+.full-screen-modal .modal__content .modal__content-aside-left h5.information-bar {
+    text-align: center;
+    font: normal normal 16px/24px Roboto;
+    font-family: "RobotoRegular", sans-serif;
+    letter-spacing: 0.16px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    opacity: 1;
+    max-width: 52%;
+    margin: 40px auto 97px;
+}
+
+.full-screen-modal .modal__content .modal__content-aside-left .modal__body > span {
+    display: block;
+    text-align: center;
+    font: normal normal 300 14px/17px Campton DEMO;
+    font-family: "Campton-LightDEMO", sans-serif;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+
+.full-screen-modal .form-group:first-child {
+    margin-top: 0;
+}
+
+.full-screen-modal .form-group {
+    margin-top: 20px;
+}
+
+.full-screen-modal label {
+    font-weight: 700;
+}
+
+.full-screen-modal input {
+    width: 100%;
+    border: 1px solid rgba(112, 112, 112, .4);
+    text-align: left;
+    font: normal normal 300 16px/19px Campton DEMO;
+    font-family: "Campton-LightDEMO", sans-serif;
+    padding: 15px 15px 14px;
+    letter-spacing: 0;
+    color: rgba(0, 0, 0, .5);
+
+}
+.full-screen-modal input::placeholder {
+    font: normal normal 300 16px/19px Campton DEMO;
+    font-family: "Campton-LightDEMO", sans-serif;
+}
+.full-screen-modal input[type=number]::placeholder ,
+.full-screen-modal input[type=password]::placeholder {
+    font-family: "RobotoRegular", sans-serif;
+}
+
+.full-screen-modal input[type=password] {
+    font-family: "RobotoLight", sans-serif;
+}
+
+.full-screen-modal .other-methods-bar p {
+    text-align: center;
+    font: normal normal 300 14px/17px Campton DEMO;
+    font-family: "Campton-LightDEMO", sans-serif;
+    letter-spacing: 0;
+    color: #5D5D5D;
+    opacity: 1;
+    margin: 20px 0;
+}
+
+.full-screen-modal .other-methods-bar > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.full-screen-modal .other-methods-bar .another-way {
+    width: 50%;
+    max-width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    border: 1px solid;
+    margin-bottom: 20px;
+}
+
+.full-screen-modal .other-methods-bar .another-way:nth-child(3),
+.full-screen-modal .other-methods-bar .another-way:nth-child(4) {
+    margin-bottom: 0
+}
+
+.full-screen-modal .other-methods-bar .another-way.linkedin-method {
+    border-color: #0084B1;
+    color: #0084B1;
+}
+
+.full-screen-modal .other-methods-bar .another-way.google-method {
+    border-color: #DD4B39;
+    color: #DD4B39;
+}
+
+.full-screen-modal .other-methods-bar .another-way.facebook-method {
+    border-color: #3A559F;
+    color: #3A559F;
+}
+
+.full-screen-modal .other-methods-bar .another-way.apple-method {
+    border-color: #000000;
+    color: #000000;
+}
+
+.full-screen-modal .other-methods-bar .another-way span {
+
+}
+
+.full-screen-modal .other-methods-bar .another-way .img-bar {
+    min-width: 32px;
+    height: 32px;
+    background-color: rgba(0, 0, 0, .1);
+
+}
+
+.full-screen-modal .other-methods-bar .another-way .text-bar {
+    width: 100%;
+    text-align: center;
+    font: normal normal bold 16px/19px Campton DEMO;
+    font-family: "Campton-LightDEMO", sans-serif;
+    letter-spacing: 0;
+    opacity: 1;
+}
+
+.full-screen-modal .other-methods-bar .another-way img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+    display: block;
+}
+
+.full-screen-modal .keep-me-bar ,
+.full-screen-modal .user-accept-bar {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 20px 0;
+    max-width: 380px;
+}.full-screen-modal .user-accept-bar {
+ justify-content: initial;
+ }
+
+.full-screen-modal .keep-me-bar > div button ,
+.full-screen-modal .user-accept-bar > div button {
+    text-align: right;
+    font: normal normal 300 14px/17px Campton DEMO;
+    font-family: "Campton-LightDEMO", sans-serif;
+    letter-spacing: 0;
+    color: #031A39;
+    text-transform: capitalize;
+    opacity: 1;
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    padding: 0;
+
+margin: 0 0 0 6px}
+
+#login-content .btn-bar {
+    margin: 0;
+}
+
+
+#sign-up_content .user-accept-bar {
+    margin: 0;
+    height: 100%;
+}
+
+#sign-up_content .btn-bar {
+    max-width: 380px;
+    margin: auto;
+}
+
+#sign-up_content .btn-bar button {
+    text-transform: capitalize;
+}
+
+
+#sign-up_content .modal__content .modal__content-aside-right {
+    display: block;
+    margin: 50px 80px 56px;
+}
+#sign-up_content .checkBox-btn-styles label {
+    text-transform: unset;
+}
+
+.full-screen-modal .modal__body > div {
+    width: 100%;
+}
+
+.full-screen-modal .modal__body  {
+    max-width: 780px;
+}
+
+.full-screen-modal .modal__body .register-as-a-client {
+    max-width: 380px;
+}
+
+
+.full-screen-modal .modal__body  .as-a-studio-through-controller {
+    margin: 0 0 30px 0;
+}
+
+.full-screen-modal .modal__body   .form-banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 26px 0 0 0;
+}
+
+.full-screen-modal .modal__body   .form-banner > div {
+    width: 50%;
+    max-width: 340px;
+    margin: 0 0 20px 0;
+}
+
+.throughFreelance{
+    display: none;
+}
+  .services-offered-banner {
+    margin: 20px 0;
+}
+
+/* checkBox-item-2 */
+.checkBox-item-2.checkBox-btn-styles input:checked + label .checkbox #colors_2 {
+    stroke: url(#gradient_checkbox_2);
+    stroke-dasharray: 145;
+    stroke-dashoffset: 145;
+    animation: checked 1000ms ease forwards;
+}
+
+.checkBox-item-2.checkBox-btn-styles input:checked + label .checkbox path,
+.checkBox-item-2.checkBox-btn-styles input:checked + label .checkbox polyline {
+    stroke: url(#gradient_checkbox_2);
+    stroke-dasharray: 40;
+    stroke-dashoffset: 40;
+    animation: checked 1000ms ease forwards;
+}
+/*******************************************************************************************************/
+/* checkBox-item-3 */
+.checkBox-item-3.checkBox-btn-styles input:checked + label .checkbox #colors_3 {
+    stroke: url(#gradient_checkbox_3);
+    stroke-dasharray: 145;
+    stroke-dashoffset: 145;
+    animation: checked 1000ms ease forwards;
+}
+
+.checkBox-item-3.checkBox-btn-styles input:checked + label .checkbox path,
+.checkBox-item-3.checkBox-btn-styles input:checked + label .checkbox polyline {
+    stroke: url(#gradient_checkbox_3);
+    stroke-dasharray: 40;
+    stroke-dashoffset: 40;
+    animation: checked 1000ms ease forwards;
+}
+/*******************************************************************************************************/
+.full-screen-modal  .modal__dialog {
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    border-radius: 8px;
+    box-shadow: 0 0 60px #0000001A;
+    opacity: 1;
+}
+.full-screen-modal .modal__content .modal__content-aside-left{
+    border-radius: 8px 0 0 8px;
+
+}
+ .modal__content-aside-left .btn-bar {
+    margin: auto;
+}
+
+ .modal__content-aside-left .btn-bar button {
+    max-width: 260px;
+    margin: 20px auto 0;
+}
+#sign-up_content .question-bar {
+    text-align: left;
+    font: normal normal normal 16px/19px Roboto;
+    font-family: RobotoRegular, sans-serif;
+    letter-spacing: 0;
+    color: #39393B;
+    opacity: 1;
+    margin: 0 0 12px 0;
+}
+/*#login_content.is-modal-active {
+    justify-content: center;
+    align-items: center;
+}*/
+
+#login_content.full-screen-modal .modal__dialog ,
+#resetPass_content.full-screen-modal .modal__dialog ,
+#forgotPass_content.full-screen-modal .modal__dialog {
+    max-width: 1020px;
+    margin: auto 30px;
+}
+
+#login_content.full-screen-modal .modal__content .modal__content-aside-right .modal__body ,
+#resetPass_content.full-screen-modal .modal__content .modal__content-aside-right .modal__body ,
+#forgotPass_content.full-screen-modal .modal__content .modal__content-aside-right .modal__body {
+    width: 100%;
+    max-width: 340px;
+}
+
+#login_content.full-screen-modal .modal__body .form-banner ,
+#resetPass_content.full-screen-modal .modal__body .form-banner ,
+#forgotPass_content.full-screen-modal .modal__body .form-banner {
+    flex-direction: column;
+}
+
+#login_content.full-screen-modal .modal__body .form-banner > div ,
+#resetPass_content.full-screen-modal .modal__body .form-banner > div ,
+#forgotPass_content.full-screen-modal .modal__body .form-banner > div {
+    width: 100%;
+}
+
+#login_content.full-screen-modal .user-accept-bar ,
+#resetPass_content.full-screen-modal .user-accept-bar ,
+#forgotPass_content.full-screen-modal .user-accept-bar {
+    justify-content: space-between;
+    margin: 0;
+}
+
+#login_content.full-screen-modal .modal__content .modal__content-aside-right .btn-bar ,
+#resetPass_content.full-screen-modal .modal__content .modal__content-aside-right .btn-bar ,
+#forgotPass_content.full-screen-modal .modal__content .modal__content-aside-right .btn-bar {
+    margin: 0;
+}
+
+#login_content.full-screen-modal .modal__content .modal__content-aside-right .modal__body .logo-bar ,
+#resetPass_content.full-screen-modal .modal__content .modal__content-aside-right .modal__body .logo-bar ,
+#forgotPass_content.full-screen-modal .modal__content .modal__content-aside-right .modal__body .logo-bar {
+    margin: 0 0 30px 0;
+    max-width: 110px;
+    height: auto;
+}
+
+#login_content.full-screen-modal .modal__content .modal__content-aside-right .modal__body .logo-bar img ,
+#resetPass_content.full-screen-modal .modal__content .modal__content-aside-right .modal__body .logo-bar img ,
+#forgotPass_content.full-screen-modal .modal__content .modal__content-aside-right .modal__body .logo-bar img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+#login_content.full-screen-modal .user-accept-bar > div button {
+    color: #FFC000;
+    text-decoration: none;
+}
+
+
+/* Medias Full screen  */
+
+@media (max-width: 1400px) {
+    #sign-up_content.full-screen-modal .modal__dialog {
+        margin: auto 35px;
+    }
+
+    .full-screen-modal .modal__body   .form-banner > div {
+        width: 49%;
+    }
+
+    #sign-up_content .modal__content .modal__content-aside-right {
+        margin: 50px 30px 50px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    #sign-up_content.full-screen-modal .modal__content .modal__content-aside-left {
+        max-width: 320px;
+    }
+
+    .full-screen-modal .keep-me-bar > div button,
+    .full-screen-modal .user-accept-bar > div button, .checkBox-btn-styles label {
+        font-size: 12px !important;
+    }
+
+    #sign-up_content .checkBox-btn-styles .checkbox {
+        width: 15px;
+        height: 15px;
+    }
+
+    .full-screen-modal .modal__content .modal__content-aside-left h5.information-bar {
+        max-width: 90%;
+        margin: 40px auto 50px;
+    }
+}
+
+@media (max-width: 992px) {
+    #sign-up_content.full-screen-modal .modal__dialog {
+        max-height: 825px;
+        margin: 30px 35px;
+
+    }
+
+    #sign-up_content .full-screen-modal .modal__content .modal__content-aside-left {
+        max-width: 300px;
+    }
+/*
+    .full-screen-modal .modal__header button.modal__close {
+        width: 27px;
+        padding: 5px;
+    }*/
+
+    .full-screen-modal .modal__body   .form-banner > div {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #sign-up_content.full-screen-modal input {
+        padding: 7px 10px 7px;
+    }
+
+    #sign-up_content.full-screen-modal .modal__body   .form-banner {
+        margin: 20px 0 0 0;
+    }
+
+    #sign-up_content .modal__content .modal__content-aside-right {
+        margin: 30px 20px;
+    }
+    #sign-up_content .question-bar {
+        font-size: 12px;
+    }
+    .full-screen-modal .modal__body   .form-banner > div {
+        margin: 0 0 10px 0;
+    }
+
+    #sign-up_content.full-screen-modal h2.modal__title {
+        margin: 0 0 10px 0;
+    }
+
+    #sign-up_content.full-screen-modal .modal__body   .form-banner {
+        margin: 10px 0 0 0;
+    }
+
+    .modal label {
+        font-size: 14px;
+        line-height: initial
+    }
+
+    #sign-up_content .user-accept-bar {
+        height: auto;
+    }
+
+    #sign-up_content  .btn-bar > button {
+        /*padding: 7px 0 7px 0;*/
+        font-size: 14px;
+        line-height: initial;
+    }
+
+}
+
+@media (max-width: 769px) {
+    .full-screen-modal .modal__content{
+        flex-direction: column;
+    }
+    .full-screen-modal .modal__content > div{
+        width: 100%;
+
+    }
+    .full-screen-modal .modal__content .modal__content-aside-left{
+        max-width: 100% !important;
+        border-radius: 8px 8px 0 0;
+    }
+    #login_content.full-screen-modal .user-accept-bar ,
+    #resetPass_content.full-screen-modal .user-accept-bar ,
+    #forgotPass_content.full-screen-modal .user-accept-bar {
+        max-width: 100%;
+    }
+    #sign-up_content .btn-bar{
+    max-width: 100%;
+    }
+    .full-screen-modal .modal__content .modal__content-aside-left .modal__body{
+        position: initial;
+        max-width: 100%;
+        padding: 15px 0;
+        font-size: 14px;
+        line-height: initial;
+    }
+    #sign-up_content .modal__content .modal__content-aside-right{
+        margin: 0;
+    }
+    .full-screen-modal .modal__content .modal__content-aside-right .modal__body {
+        background-color: #fff;
+        max-width: 100% !important;
+        padding: 20px 30px;
+
+    }
+    #sign-up_content.full-screen-modal .modal__dialog {
+        max-height: 1100px;
+        margin: 30px;
+    }
+    .full-screen-modal .modal__content .modal__content-aside-left h5.information-bar{
+        margin: 20px auto;
+        max-width: 57%;
+    }
+     .modal__content-aside-left .btn-bar button,
+    .full-screen-modal input{
+        font-size: 14px;
+    }
+/*
+    .full-screen-modal .modal__header button.modal__close {
+        box-shadow: 0 0 2px #ffffff;
+        border: 2px solid #ffffff;
+        background-color: #ffffff;}*/
+}
+
+@media (max-width: 480px) {
+    #sign-up_content.full-screen-modal .modal__dialog {
+        /*margin: 20px 15px;*/
+        margin: auto 15px;
+    }
+     .modal__content .modal__content-aside-right .modal__body{
+        padding: 20px 15px;
+    }
+    .full-screen-modal .modal__content .modal__content-aside-left h5.information-bar {
+        max-width: 65%;
+        font-size: 12px;
+        margin: 15px auto;
+    }
+    .full-screen-modal .modal__content .modal__content-aside-left .modal__body > span,
+    .modal label,
+    .custom-radios input[type="radio"] + label,
+    .full-screen-modal input,
+    #sign-up_content  .btn-bar > button
+    {
+        font-size: 12px;
+    }
+    .full-screen-modal .modal__content .modal__content-aside-left .logo-bar {
+        width: 200px;
+        height: auto;}
+    #sign-up_content.full-screen-modal h2.modal__title{
+        font-size: 19px;
+    }
+    #sign-up_content.full-screen-modal .modal__dialog {
+        max-height: 1063px;}
+
+     .modal__content-aside-left .btn-bar button{
+        width: auto;
+        padding: 10px 50px;
+    }
+    .full-screen-modal .modal__content .modal__content-aside-right .modal__body{
+        padding: 20px 15px;
+    }
+}
+

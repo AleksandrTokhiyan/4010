@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        .custom-radios div {
+            display: inline-block;
+        }
+        .custom-radios input[type="radio"] {
+            display: none;
+        }
+        .custom-radios input[type="radio"] + label {
+            text-align: left;
+            font: normal normal normal 14px/17px Roboto;
+            font-family: RobotoRegular,sans-serif;
+            letter-spacing: 0;
+            color: #39393B;
+            opacity: 1;
+            display: flex;
+            align-items: center;
+
+        }
+        .custom-radios div:first-child {
+        margin: 0 30px 0 0;
+        }
+        .custom-radios input[type="radio"] + label span {
+            display: inline-block;
+            width: 17px;
+            height: 17px;
+            margin: 0 6px 0 0;
+            vertical-align: middle;
+            cursor: pointer;
+            border-radius: 4px;
+            border: 1px solid rgba(71,72,74, .5);
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+            background-repeat: no-repeat;
+            background-position: center;
+            text-align: center;
+            opacity: 0.5;
+        }
+        .custom-radios input[type="radio"] + label span img {
+            opacity: 0;
+            transition: all 0.3s ease;            max-width: 12px;
+
+
+        }
+
+        .custom-radios input[type="radio"]:checked + label span img {
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+<div class="custom-radios">
+    <div>
+        <input type="radio" id="planningToSell_yes" name="planningToSell" value="planningToSell_yes" checked>
+        <label for="planningToSell_yes">
+            <span>
+              <img src="../images/4010/icons/radio-btn-check.svg" alt="Checked Icon" />
+            </span>
+            Yes
+        </label>
+    </div>
+
+    <div>
+        <input type="radio" id="planningToSell_no" name="planningToSell" value="planningToSell_no">
+        <label for="planningToSell_no">
+            <span>
+              <img src="../images/4010/icons/radio-btn-check.svg" alt="Checked Icon" />
+            </span>
+            No
+        </label>
+    </div>
+</div>
+</body>
+</html>

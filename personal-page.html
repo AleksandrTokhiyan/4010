@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Structure/Clients/Personal page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-face.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/clients.css">
+    <link rel="stylesheet" href="css/app.css">
+    <style>
+
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <input type="checkbox" id="menuToggler" class="input-toggler" value="1" autofocus="true"/>
+    <label for="menuToggler" id="menuTogglerLabel" class="menu-toggler" role="button" aria-pressed="false"
+           aria-expanded="false" aria-label="Navigation button">
+        <span class="menu-toggler__line"></span>
+        <span class="menu-toggler__line"></span>
+        <span class="menu-toggler__line"></span>
+    </label>
+    <div id="sidebar" role="navigation" aria-labelledby="menuTogglerLabel" aria-hidden="true"
+         class=" sidebar ">
+        <div class="navigation-bar">
+            <div class="logo-bar">
+                <img src="images/4010/Fortune-logo.png" alt="Logo" title="Logo">
+            </div>
+            <div class="switch-button"><span class="active"></span>
+                <button class="switch-button-case left active-case" id="structures-btn">Structures</button>
+                <button class="switch-button-case right">Insurance</button>
+            </div>
+            <div class="menu-items-bar">
+                <div>
+                    <a href="structure-dashboard.html">
+                       <span class="icon-bar">
+                           <img src="images/4010/icons/Dashboard-icon.svg" alt="Dashboard Icon" title="Dashboard">
+                       </span>
+                        <span class="name-bar">Dashboard</span>
+                    </a>
+                    <a href="structure-clients.html" class="active-menu-item">
+                       <span class="icon-bar">
+                           <img src="images/4010/icons/Clients-icon.svg" alt="Clients Icon" title="Clients">
+                       </span>
+                        <span class="name-bar">Clients</span>
+                    </a>
+                    <a href="#">
+                       <span class="icon-bar">
+                           <img src="images/4010/icons/Invite-New-Clients-icon.svg"
+                                alt="Invite New Clients-icon Icon"
+                                title="Invite-New-Clients-icon">
+                       </span>
+                        <span class="name-bar">invite new clients</span>
+                    </a>
+                    <a href="#">
+                       <span class="icon-bar">
+                           <img src="images/4010/icons/My-Account-icon.svg" alt="My Account Icon" title="My Account">
+                       </span>
+                        <span class="name-bar">My Account</span>
+                    </a>
+                    <a href="#">
+                       <span class="icon-bar">
+                           <img src="images/4010/icons/Settings-icon.svg" alt="Settings Icon" title="Settings">
+                       </span>
+                        <span class="name-bar">Settings</span>
+                    </a>
+                </div>
+                <a href="#" id="logoutItem">
+                       <span class="icon-bar">
+                           <img src="images/4010/icons/Logout-icon.svg" alt="Logout Icon" title="Logout">
+                       </span>
+                    <span class="name-bar">Logout</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper-body">
+        <header>
+            <nav>
+                <div class="page_name">
+                    <a href="structure-clients.html">
+                        <span>
+                            <img src="images/4010/icons/arrow-bottom.svg" alt="" type="">
+                        </span>
+                        <h1>Clients</h1>
+                    </a>
+                </div>
+                <div class="user_avatar_bar">
+                    <h3 class="user-name">James Smith</h3>
+                    <img src="images/4010/James-Smith-avatar.png" class="user-avatar" alt="User Avatar"
+                         title="User Avatar">
+                </div>
+            </nav>
+        </header>
+        <!-- /header  -->
+
+        <section>
+            <div class="section-wrap">
+                <div class="personal-content">
+                    <div>
+                        <div>
+                            <p class="individual_no"><span>No</span>142</p>
+                            <h3 class="person_naem">James Smith</h3>
+                            <p class="person_mail">email_example@gmail.com</p>
+                        </div>
+                        <div>
+                            <button class="active-person">active</button>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h5>
+                                assets-to-protect form
+                                <span class="date-content">20 Aug 2020</span>
+                            </h5>
+                            <button class="view-btn">View</button>
+                        </div>
+                        <div>
+                            <h5>
+                                irrevocable trust form
+                                <span class="date-content">20 Aug 2020</span>
+                            </h5>
+                            <button class="view-btn">View</button>
+                        </div>
+                        <div>
+                            <h5>
+                                trust and corporate docs
+                                <span class="date-content">20 Aug 2020</span>
+                            </h5>
+                            <button class="view-btn">View</button>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h4>Platinum package</h4>
+                        </div>
+                        <div>
+                            <h4 class="fully_content">fully paid</h4>
+                        </div>
+                    </div>
+                    <button class="edit-info-btn">
+                        <span>
+                            <img src="images/4010/icons/edit-icon.svg" alt="Edit icon"
+                                 title="Edit client information">
+                        </span>
+                        <span>Edit client information</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!--  /Section  -->
+        <footer>
+
+        </footer>
+    </div>
+</div>
+<script>
+
+</script>
+<script src="js/switch-buttons.js"></script>
+<script src="lib/js/jquery-3.3.1.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+
+</script>
+</body>
+</html>

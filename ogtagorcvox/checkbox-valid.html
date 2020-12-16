@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<label>
+    <input id="accepted1" type="checkbox" />Please accept
+</label>
+<label>
+    <input id="accepted2" type="checkbox" /> Please accept2
+</label>
+
+<label>
+    <input id="accepted3" type="checkbox" /> Please accept3
+</label>
+
+
+<button class="btn btn-primary" type="submit" id="id_complete" name="save" disabled="disabled">Complete Order</button>
+
+<script src="../lib/js/jquery-3.3.1.min.js"></script>
+<script>
+    $('#accepted1,#accepted2,#accepted3').on("click",function () {
+        if ($('#accepted1:checked,#accepted2:checked,#accepted3:checked').length == 3)
+            $('#id_complete').removeAttr('disabled');
+        else
+            $('#id_complete').attr('disabled','disabled');
+    });
+</script>
+</body>
+</html>

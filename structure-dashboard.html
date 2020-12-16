@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Structure/Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/app.css">
+    <style>
+
+
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <input type="checkbox" id="menuToggler" class="input-toggler" value="1" autofocus="true"/>
+    <label for="menuToggler" id="menuTogglerLabel" class="menu-toggler" role="button" aria-pressed="false"
+           aria-expanded="false" aria-label="Navigation button">
+        <span class="menu-toggler__line"></span>
+        <span class="menu-toggler__line"></span>
+        <span class="menu-toggler__line"></span>
+    </label>
+    <div id="sidebar" role="navigation" aria-labelledby="menuTogglerLabel" aria-hidden="true"
+         class=" sidebar">
+        <div class="navigation-bar">
+            <div class="logo-bar">
+                <img src="images/4010/Fortune-logo.png" alt="Logo" title="Logo">
+            </div>
+            <div class="switch-button"><span class="active"></span>
+                <button class="switch-button-case left active-case" id="structures-btn">Structures</button>
+                <button class="switch-button-case right">Insurance</button>
+            </div>
+            <div class="menu-items-bar">
+                <div>
+                    <a href="structure-dashboard.html" class="active-menu-item">
+                       <span class="icon-bar">
+                           <img src="images/4010/icons/Dashboard-icon.svg" alt="Dashboard Icon" title="Dashboard">
+                       </span>
+                        <span class="name-bar">Dashboard</span>
+                    </a>
+                    <a href="structure-clients.html">
+                       <span class="icon-bar">
+                           <img src="images/4010/icons/Clients-icon.svg" alt="Clients Icon" title="Clients">
+                       </span>
+                        <span class="name-bar">Clients</span>
+                    </a>
+                    <a href="#">
+                       <span class="icon-bar">
+                           <img src="images/4010/icons/Invite-New-Clients-icon.svg"
+                                alt="Invite New Clients-icon Icon"
+                                title="Invite-New-Clients-icon">
+                       </span>
+                        <span class="name-bar">invite new clients</span>
+                    </a>
+                    <a href="#">
+                       <span class="icon-bar">
+                           <img src="images/4010/icons/My-Account-icon.svg" alt="My Account Icon" title="My Account">
+                       </span>
+                        <span class="name-bar">My Account</span>
+                    </a>
+                    <a href="#">
+                       <span class="icon-bar">
+                           <img src="images/4010/icons/Settings-icon.svg" alt="Settings Icon" title="Settings">
+                       </span>
+                        <span class="name-bar">Settings</span>
+                    </a>
+                </div>
+                <a href="#" id="logoutItem">
+                       <span class="icon-bar">
+                           <img src="images/4010/icons/Logout-icon.svg" alt="Logout Icon" title="Logout">
+                       </span>
+                    <span class="name-bar">Logout</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper-body">
+        <header>
+            <nav>
+                <div class="page_name">
+                    <h1>Dashboard</h1>
+                </div>
+                <div class="user_avatar_bar">
+                    <h3 class="user-name">James Smith</h3>
+                    <img src="images/4010/James-Smith-avatar.png" class="user-avatar" alt="User Avatar"
+                         title="User Avatar">
+                </div>
+            </nav>
+        </header>
+        <!-- /header  -->
+
+        <section>
+            <div class="section-wrap dashboard-section">
+                <div class="header-bar">
+                    <div class="total-payment-bar">
+                        <h2>Total Payments</h2>
+                        <p>$14.800 one-time plus $200/mo.</p>
+                    </div>
+                    <div class="date-bar">
+                        <p>December 2020</p>
+                        <img src="images/4010/icons/calendar-icon.svg" alt="" title="">
+                    </div>
+                </div>
+                <div class="total-payments-packages">
+                    <h4>Total Payments for all packages</h4>
+                    <div class="total-payments-appearance">
+                        <div class="progress-bar">
+                            <div class="progress-paid"></div>
+                            <div class="progress-must-paid"></div>
+                        </div>
+                        <div class="progress-val">
+                            <span>$5k</span>
+                            <span>$10k</span>
+                            <span>$15k</span>
+                            <span>$20k</span>
+                            <span>$25k</span>
+                            <span>$30k</span>
+                        </div>
+                    </div>
+                    <div class="total-payments-values">
+                        <div class="aside-left">
+                            <div class="total-payment-val-item">
+                                <h5>Paid</h5>
+                                <p>$13,500</p>
+                            </div>
+                            <div class="total-payment-val-item">
+                                <h5>Must Be Paid</h5>
+                                <p>$11,200</p>
+                            </div>
+                        </div>
+                        <div class="aside-right">
+                            <div class="total-payment-val-item">
+                                <h5>Your percent</h5>
+                                <p>10%</p>
+                            </div>
+                            <div class="total-payment-val-item">
+                                <h5>Total Payments</h5>
+                                <p>$24,700</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="packages-profit-bar">
+                    <h4>Total Profit for all packages <span>%</span></h4>
+                    <div id="chartdiv"></div>
+                </div>
+            </div>
+        </section>
+        <!--  /Section  -->
+        <footer>
+
+        </footer>
+    </div>
+</div>
+<script>
+
+</script>
+<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+<script src="js/switch-buttons.js"></script>
+<script src="lib/js/jquery-3.3.1.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/chart-diagram.js"></script>
+
+</body>
+</html>

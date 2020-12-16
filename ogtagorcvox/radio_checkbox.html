@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Radio Checkbox</title>
+    <style>
+
+        /* Radio Button Styles */
+        .radio-btn-styles .check {
+            margin-right: 7px;
+            min-width: 17px;
+            height: 17px;
+            box-shadow: 0 0 10px #00000029;
+            border-radius: 50%;
+
+        }
+
+        .radio-btn-styles .check #border {
+            fill: none;
+            stroke: #A61111;
+            border-radius: 50%;
+            stroke-width: 3;
+            stroke-linecap: round;
+        }
+
+        .radio-btn-styles .check #dot {
+            fill: url(#gradient);
+            transform: scale(0);
+            transform-origin: 50% 50%;
+        }
+
+        .radio-btn-styles input {
+            display: none;
+        }
+
+        .radio-btn-styles label {
+            font: normal normal 300 16px/19px Campton DEMO;
+            font-family: "Campton-LightDEMO", sans-serif;
+        }
+
+        .radio-btn-styles input:checked + label {
+            background: linear-gradient(180deg, #A61111, #666);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .radio-btn-styles input:checked + label svg #border {
+            stroke: url(#gradient);
+            stroke-dasharray: 145;
+            stroke-dashoffset: 145;
+            animation: checked 500ms ease forwards;
+        }
+
+        .radio-btn-styles input:checked + label svg #dot {
+            transform: scale(1);
+            transition: transform 500ms cubic-bezier(0.57, 0.21, 0.69, 3.25);
+        }
+
+        @keyframes checked {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+    </style>
+
+    <style>
+        /* Checkbox button styles */
+
+        .checkBox-btn-styles {
+            line-height: 16px;
+
+        }
+
+        .checkBox-btn-styles .form-check {
+            padding-left: 0;
+        }
+
+        .checkBox-btn-styles label {
+            position: relative;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            cursor: pointer;
+
+            text-align: left;
+            font: normal normal 300 14px/17px Campton DEMO;
+            font-family: "Campton-LightDEMO", sans-serif;
+
+            letter-spacing: 0;
+            color: #5D5D5D;
+            opacity: 1;
+        }
+
+        .checkBox-btn-styles .checkbox {
+            position: relative;
+            margin-right: 8px;
+            width: 17px;
+            height: 17px;
+            fill: none;
+            stroke-width: 3;
+            stroke-linecap: round;
+        }
+
+        .checkBox-btn-styles .checkbox rect {
+            stroke: rgba(112,112,112,0.5);
+        }
+
+        .checkBox-btn-styles input {
+            display: none;
+        }
+
+        .checkBox-btn-styles input:checked + label .checkbox #colors {
+            stroke: url(#gradient);
+            stroke-dasharray: 145;
+            stroke-dashoffset: 145;
+            animation: checked 1000ms ease forwards;
+        }
+
+        .checkBox-btn-styles input:checked + label .checkbox path, input:checked + label .checkbox polyline {
+            stroke: url(#gradient);
+            stroke-dasharray: 40;
+            stroke-dashoffset: 40;
+            animation: checked 1000ms ease forwards;
+        }
+
+        .checkBox-btn-styles input:checked + label .checkbox path {
+            stroke-dasharray: 220;
+            stroke-dashoffset: 220;
+        }
+
+        @keyframes checked {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="radio-btn-styles">
+    <div class="radio-btn-item">
+        <input type="radio" name="radio-name" id="radio-1">
+        <label for="radio-1">
+            <svg class="check" viewBox="0 0 40 40">
+                <defs>
+                    <linearGradient id="gradient" x1="0" y1="0" x2="0" y2="100%">
+                        <stop offset="0%" stop-color="#A61111"></stop>
+                        <stop offset="100%" stop-color="#666"></stop>
+                    </linearGradient>
+                </defs>
+                <circle id="border" r="18px" cx="20px" cy="20px"></circle>
+                <circle id="dot" r="8px" cx="20px" cy="20px"></circle>
+            </svg>
+            Radio Value
+        </label>
+    </div>
+    <div class="radio-btn-item">
+        <input type="radio" name="radio-name" id="radio-2">
+        <label for="radio-2">
+            <svg class="check" viewBox="0 0 40 40">
+                <defs>
+                    <linearGradient id="gradient" x1="0" y1="0" x2="0" y2="100%">
+                        <stop offset="0%" stop-color="#A61111"></stop>
+                        <stop offset="100%" stop-color="#555555"></stop>
+                    </linearGradient>
+                </defs>
+                <circle id="border" r="18px" cx="20px" cy="20px"></circle>
+                <circle id="dot" r="8px" cx="20px" cy="20px"></circle>
+            </svg>
+            Radio Value
+        </label>
+    </div>
+</div>
+<div class="checkBox-btn-styles">
+    <div class="form-check">
+        <input type="checkbox" id="giftCard">
+        <label for="giftCard">
+            <span>
+                <svg class="checkbox" viewBox="0 0 40 40">
+                    <defs>
+                        <linearGradient id="gradient" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0%" stop-color="#D4B86C"></stop>
+                            <stop offset="100%" stop-color="#707070"></stop>
+                        </linearGradient>
+                    </defs>
+                    <rect x="2" y="2" width="36" height="36"></rect>
+                    <rect id="colors" x="2" y="2" width="36" height="36"></rect>
+                    <polyline points="9,22 18,30 32,9"></polyline>
+                </svg>
+            </span>
+            <span>
+                Gift Card
+            </span>
+        </label>
+    </div>
+    <div class="form-check">
+        <input type="checkbox" id="greetingCard">
+        <label for="greetingCard">
+                                <span>
+                                <svg class="checkbox" viewBox="0 0 40 40">
+                                    <defs>
+                                        <linearGradient id="gradient" x1="0" y1="0" x2="1" y2="1">
+                                            <stop offset="0%" stop-color="#151a6a"></stop>
+                                            <stop offset="100%" stop-color="#53a6ff"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                    <rect x="2" y="2" width="36" height="36"></rect>
+                                    <rect id="colors" x="2" y="2" width="36" height="36"></rect>
+                                    <polyline points="9,22 18,30 32,9"></polyline>
+                                </svg>
+                                </span>
+            <span>
+                                        Greeting Card
+                                    </span>
+        </label>
+    </div>
+</div>
+
+
+</body>
+</html>

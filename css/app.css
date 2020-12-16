@@ -1,0 +1,639 @@
+/* App */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+button, input, textarea , label{
+    outline: none !important;
+}
+button{
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+}
+
+.hide {
+    display: none !important;
+}
+
+.see-value-bar {
+    position: relative;
+    display: block;
+}
+
+.btn-bar,
+.btns-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 20px 0 0 0;
+}
+
+.btn-bar > a,
+.btn-bar > button,
+.btns-bar > button {
+    padding: 15px 0 14px 0;
+    text-align: center;
+    font: normal normal 16px/19px Roboto;
+    font-family: "RobotoRegular", sans-serif;
+    letter-spacing: 0;
+    opacity: 1;
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+
+.btn-bar > button {
+    width: 100%;
+}
+.btn-bar > a {
+    width: 100%;
+}
+
+.btns-bar > button {
+    width: 50%;
+}
+
+.btns-bar > button:first-child {
+    margin: 0 20px 0 0;
+}
+
+button.light-btn-style {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    opacity: 1;
+    color: #ffffff;
+}
+
+button.site-btn-style ,
+a.site-btn-style {
+    background: #142A33 0 0 no-repeat padding-box;
+    border: 1px solid #142A33;
+    opacity: 1;
+    color: #fff;
+}
+
+
+/* Checkbox button styles */
+
+.checkBox-btn-styles {
+    line-height: 16px;
+
+}
+
+.checkBox-btn-styles .form-check {
+    padding-left: 0;
+}
+
+.checkBox-btn-styles label {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    cursor: pointer;
+
+    text-align: left;
+    font: normal normal 300 14px/17px Campton DEMO;
+    font-family: "Campton-LightDEMO", sans-serif;
+    /*margin: 0;*/
+    letter-spacing: 0;
+    color: #5D5D5D;
+    opacity: 1;
+}
+
+.checkBox-btn-styles .checkbox {
+    position: relative;
+    margin-right: 8px;
+    width: 17px;
+    height: 17px;
+    fill: none;
+    stroke-width: 3;
+    stroke-linecap: round;
+}
+
+.checkBox-btn-styles .checkbox rect {
+    stroke: rgba(112, 112, 112, 0.5);
+}
+
+.checkBox-btn-styles input {
+    display: none;
+}
+
+.checkBox-btn-styles input:checked + label .checkbox #colors {
+    stroke: url(#gradient);
+    stroke-dasharray: 145;
+    stroke-dashoffset: 145;
+    animation: checked 1000ms ease forwards;
+}
+
+.checkBox-btn-styles input:checked + label .checkbox path, input:checked + label .checkbox polyline {
+    /*stroke: url(#gradient);*/
+    stroke: #031A39;
+    stroke-dasharray: 40;
+    stroke-dashoffset: 40;
+    animation: checked 1000ms ease forwards;
+}
+
+.checkBox-btn-styles input:checked + label .checkbox path {
+    stroke-dasharray: 220;
+    stroke-dashoffset: 220;
+}
+
+@keyframes checked {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* Radio Button Styles */
+.radio-btn-styles {
+    display: flex;
+}
+
+.radio-btn-styles .check {
+    margin-right: 7px;
+    min-width: 17px;
+    height: 17px;
+    box-shadow: 0 0 10px #00000029;
+    border-radius: 50%;
+
+}
+
+.radio-btn-styles .check #border {
+    fill: none;
+    stroke: rgba(0, 0, 0, .5);
+    border-radius: 50%;
+    stroke-width: 3;
+    stroke-linecap: round;
+}
+
+.radio-btn-styles .check #dot {
+    fill: url(#gradient_radio);
+    transform: scale(0);
+    transform-origin: 50% 50%;
+}
+
+.radio-btn-styles input {
+    display: none;
+}
+
+.radio-btn-styles label {
+    font: normal normal 300 16px/19px Campton DEMO;
+    font-family: "Campton-LightDEMO", sans-serif;
+    color: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.radio-btn-styles .radio-btn-item:first-child {
+    margin-right: 20px;
+}
+
+.radio-btn-styles input:checked + label {
+    background: linear-gradient(180deg, #000, #000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.radio-btn-styles input:checked + label svg #border {
+    stroke: url(#gradient_radio);
+    stroke-dasharray: 145;
+    stroke-dashoffset: 145;
+    animation: checked 500ms ease forwards;
+}
+
+.radio-btn-styles input:checked + label svg #dot {
+    transform: scale(1);
+    transition: transform 500ms cubic-bezier(0.57, 0.21, 0.69, 3.25);
+}
+
+@keyframes checked {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+/* Other Pages*/
+
+
+.other-pages {
+    display: flex;
+    align-items: center;
+    max-width: max-content;
+    margin: 30px 0 0 auto;
+}
+
+.other-pages .page-arrow {
+    max-width: 30px;
+    height: 30px;
+    display: block;
+    opacity: 0.3;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.other-pages .page-arrow:hover,
+.other-pages .page-arrow:focus,
+.other-pages .page-arrow:active {
+    opacity: 1;
+}
+
+.other-pages .page-arrow img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.other-pages .page-arrow.page-prev {
+    transform: rotate(180deg);
+}
+
+.other-pages div {
+    padding: 0 20px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.other-pages .page-num-item,
+.other-pages .many-pages-hide {
+    text-align: center;
+    font: normal normal 600 16px/21px Campton;
+    font-family: "Campton-Light", sans-serif;
+    letter-spacing: 0;
+    color: #A3A7AB;
+    text-transform: capitalize;
+    opacity: 1;
+    display: block;
+    margin: 0 5px 0 0;
+
+}
+
+.other-pages .page-num-item:last-child {
+    margin: 0;
+}
+
+.other-pages .page-num-item {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.other-pages .page-num-item.active-page {
+    background-color: #A3A7AB;
+    border-radius: 4px;
+    border: none;
+    color: #ffffff;
+}
+
+
+/* /Other Pages*/
+
+/* Scroll Content  */
+
+
+/* Parent ( position:relative; )*/
+/*
+        content::-webkit-scrollbar {
+            width: 20px;
+            background-color: rebeccapurple;
+        }
+        content::-webkit-scrollbar-track {
+            background: green;
+            width: 20px;
+            margin: 20px;
+        }
+        content::-webkit-scrollbar-thumb {
+            background-color: red;
+            border-radius: 20px;
+            border: 4px solid green;
+            width: 12px;
+        }
+*/
+.scroll-icon-bar {
+    width: 20px;
+    height: 22px;
+    position: absolute;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: #A3A7AB;
+
+}
+
+.scroll-icon-bar img {
+    max-width: 12px;
+}
+
+.scroll-top-icon {
+    top: 0;
+    transform: rotate(180deg);
+    margin: 50px 0 0 0;
+
+}
+
+.scroll-bottom-icon {
+    bottom: 0;
+}
+
+/* /Scroll Content  */
+
+/** Select **/
+#SelectCountry::placeholder {
+    text-align: left;
+    font: normal normal 300 16px/19px Campton DEMO;
+    font-family: "Campton-LightDEMO", sans-serif;
+    letter-spacing: 0;
+    color: blue !important;
+}
+
+.select-content label {
+    text-align: left;
+    font: normal normal 300 16px/19px Campton DEMO;
+    font-family: "Campton-LightDEMO", sans-serif;
+    letter-spacing: 0;
+    color: #000000;
+    text-transform: capitalize;
+    opacity: 1;
+    margin: 0 0 4px 0;
+    display: block;
+}
+
+.select-content .custom-select-wrapper {
+    width: 100%;
+    max-width: 380px;
+    background-color: #ffffff;
+    position: relative;
+    display: inline-block;
+    user-select: none;
+}
+
+.select-content .custom-select-wrapper select {
+    display: none;
+}
+
+.select-content .custom-select {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.select-content .custom-select-trigger {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+
+    width: 100%;
+    height: 48px;
+    border: 1px solid rgba(112, 112, 112, .4);
+
+    text-align: left;
+    font: normal normal 300 16px/19px Campton DEMO;
+    font-family: "Campton-LightDEMO", sans-serif;
+
+    letter-spacing: 0;
+    color: rgba(0, 0, 0, .5);
+}
+
+.select-content .custom-select-trigger:after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    right: 25px;
+    margin-top: -3px;
+    border-bottom: 1px solid rgba(0, 0, 0, .5);
+    border-right: 1px solid rgba(0, 0, 0, .5);
+    transform: rotate(45deg) translateY(-50%);
+    transition: all .4s ease-in-out;
+    transform-origin: 50% 0;
+}
+
+.select-content .custom-select.opened .custom-select-trigger:after {
+    margin-top: 3px;
+    transform: rotate(-135deg) translateY(-50%);
+}
+
+.select-content .custom-options {
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: 0;
+    right: 0;
+    min-width: 100%;
+    margin: 15px 0;
+    border: 1px solid rgba(112, 112, 112, .4);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: #ffffff;
+    transition: all .4s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-15px);
+    z-index: 999;
+
+
+    text-align: left;
+    font: normal normal 300 16px/19px Campton DEMO;
+    font-family: "Campton-LightDEMO", sans-serif;
+    letter-spacing: 0;
+    color: #000000;
+}
+
+.select-content .custom-select.opened .custom-options {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    transform: translateY(0);
+}
+
+.select-content .custom-options:before {
+    position: absolute;
+    display: block;
+    content: '';
+    bottom: 100%;
+    right: 25px;
+    width: 7px;
+    height: 7px;
+    margin-bottom: -4px;
+    border-top: 1px solid rgba(112, 112, 112, .4);
+    border-left: 1px solid rgba(112, 112, 112, .4);
+    background: #fff;
+    transform: rotate(45deg);
+    transition: all .4s ease-in-out;
+}
+
+.select-content .option-hover:before {
+    background: #f9f9f9;
+}
+
+.select-content .custom-option {
+    position: relative;
+    display: block;
+    padding: 0 22px;
+    border: 1px solid rgba(112, 112, 112, .1);
+    font-size: 18px;
+    font-weight: 600;
+    color: #b5b5b5;
+    line-height: 47px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.select-content .custom-option:first-of-type {
+    border-radius: 4px 4px 0 0;
+}
+
+.select-content .custom-option:last-of-type {
+    border-bottom: 0;
+    border-radius: 0 0 4px 4px;
+}
+
+.select-content .custom-option:hover,
+.select-content .custom-option.selection {
+    background: #EFEFEF;
+}
+
+/*********************************************************************************/
+
+/** /Select **/
+
+.custom-radios div {
+    display: inline-block;
+}
+
+.custom-radios input[type="radio"] {
+    display: none;
+}
+
+.custom-radios input[type="radio"] + label {
+    text-align: left;
+    font: normal normal normal 14px/17px Roboto;
+    font-family: RobotoRegular, sans-serif;
+    letter-spacing: 0;
+    color: #39393B;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+
+}
+
+.custom-radios div:first-child {
+    margin: 0 30px 0 0;
+}
+
+.custom-radios input[type="radio"] + label span {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin: 0 6px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid rgba(71, 72, 74, .5);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+
+.custom-radios input[type="radio"] + label span img {
+    opacity: 0;
+    transition: all 0.3s ease;
+    max-width: 12px;
+
+}
+
+.custom-radios input[type="radio"]:checked + label span img {
+    opacity: 1;
+}
+
+/* Custom Radios */
+
+
+/* Switch Button */
+
+.switch-button {
+    max-width: 200px;
+    height: 40px;
+    text-align: center;
+    margin: auto;
+    will-change: transform;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    border: 1px solid #FFFFFF;
+    border-radius: 24px;
+    opacity: 1;
+}
+
+.switch-button-case {
+    display: inline-block;
+    background: none;
+    width: 48%;
+    height: 100%;
+    color: #ffffff;
+    position: relative;
+    border: none;
+    transition: 0.3s ease all;
+    text-transform: capitalize;
+    padding-bottom: 1px;
+    border-radius: 24px;
+    text-align: center;
+    font: normal normal bold 16px/19px Roboto;
+    font-family: RobotoRegular, sans-serif;
+    opacity: 1;
+}
+
+.switch-button-case:hover {
+    color: grey;
+    cursor: pointer;
+}
+
+.switch-button-case:focus {
+    outline: none;
+}
+
+.switch-button .active {
+    color: #142A33;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+    transition: 0.3s ease-out all;
+    border-radius: 24px;
+
+}
+
+.switch-button .active-case {
+    color: #151515;
+}
+
+
+/* /Switch Button */

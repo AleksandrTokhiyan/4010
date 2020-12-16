@@ -1,0 +1,780 @@
+.responsive-table {
+    width: 100%;
+    margin-bottom: 10px;
+    border-spacing: 0;
+    position: relative;
+}
+
+
+.responsive-table thead {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+
+}
+
+@media (min-width: 48em) {
+    .responsive-table thead {
+        position: relative;
+        clip: auto;
+        height: auto;
+        width: calc(100% - 20px);
+        overflow: auto;
+        max-width: 1540px;
+
+    }
+
+    .responsive-table thead:after {
+        content: "";
+        background-color: #142A33;
+        height: 51px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 20px;
+        margin-right: -20px;
+        z-index: 99999;
+    }
+}
+
+.responsive-table thead th {
+    background-color: #142A33;
+    border: 1px solid rgba(163, 167, 171, .5);
+    font: normal normal 16px/19px Roboto;
+    font-family: RobotoRegular, sans-serif;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    opacity: 1;
+    padding: 15px 16px;
+    text-align: left;
+}
+
+.responsive-table thead th:first-of-type {
+    text-align: left;
+}
+
+.responsive-table tbody,
+.responsive-table tr,
+.responsive-table th,
+.responsive-table td {
+    display: block;
+    padding: 0;
+    text-align: left;
+    white-space: normal;
+}
+
+@media (min-width: 48em) {
+    .responsive-table tr {
+        display: table-row;
+    }
+}
+
+.responsive-table th,
+.responsive-table td {
+    padding: 0.5em;
+    vertical-align: middle;
+}
+
+@media (min-width: 30em) {
+    .responsive-table th,
+    .responsive-table td {
+        padding: 0.75em 0.5em;
+    }
+}
+
+@media (min-width: 48em) {
+    .responsive-table th,
+    .responsive-table td {
+        display: table-cell;
+        padding: 0.5em;
+    }
+}
+
+@media (min-width: 62em) {
+    .responsive-table th,
+    .responsive-table td {
+        padding: 0.75em 0.5em;
+    }
+}
+
+@media (min-width: 75em) {
+    .responsive-table th,
+    .responsive-table td {
+        padding: 0.75em;
+    }
+}
+
+@media (min-width: 48em) {
+    .responsive-table tbody {
+        position: relative
+    }
+}
+
+@media (min-width: 48em) {
+    .responsive-table tbody tr {
+        display: inline-table;
+        border-width: 1px;
+    }
+}
+
+.responsive-table tbody tr:last-of-type {
+    margin-bottom: 0;
+}
+
+.responsive-table tbody th[scope=row] {
+    background-color: rgba(163, 167, 171, .5);
+    color: white;
+}
+
+@media (min-width: 30em) {
+    .responsive-table tbody th[scope=row] {
+        border-left: 1px solid rgba(163, 167, 171, .5);
+        border-bottom: 1px solid rgba(163, 167, 171, .5);
+    }
+}
+
+@media (min-width: 48em) {
+    .responsive-table tbody th[scope=row] {
+        background-color: transparent;
+        color: #5e5d52;
+        text-align: left;
+    }
+}
+
+
+@media (min-width: 48em) {
+    .responsive-table tbody td {
+        border-left: 1px solid rgba(163, 167, 171, .5);
+        border-bottom: 1px solid rgba(163, 167, 171, .5);
+        text-align: left;
+    }
+}
+
+.responsive-table tbody td[data-title]:before {
+    content: attr(data-title);
+    float: left;
+    font-size: 0.8em;
+    color: rgba(94, 93, 82, 0.75);
+}
+
+@media (min-width: 48em) {
+    .responsive-table tbody td[data-title]:before {
+        content: none;
+    }
+}
+
+.packages-banner {
+    margin: 20px 0 0 0;
+}
+
+.responsive-table tbody th {
+    text-align: left;
+    font: normal normal bold 14px/17px Roboto;
+    font-family: RobotoRegular, sans-serif;
+    letter-spacing: 0;
+    color: #171719;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.responsive-table tbody td[data-title="Email Address"] {
+    text-align: left;
+    font: normal normal normal 14px/18px Roboto;
+    font-family: RobotoRegular, sans-serif;
+    letter-spacing: 0;
+    color: #39393B;
+    opacity: 1;
+}
+
+.responsive-table tbody td[data-title="Assets-To-Protect Form"] > div,
+.responsive-table tbody td[data-title="Irrevocable Trust Form"] > div,
+.responsive-table tbody td[data-title="Trust And Corporate Docs"] > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.responsive-table tbody td[data-title="Assets-To-Protect Form"] > div > div:first-child,
+.responsive-table tbody td[data-title="Irrevocable Trust Form"] > div > div:first-child,
+.responsive-table tbody td[data-title="Trust And Corporate Docs"] > div > div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.responsive-table tbody td[data-title="Assets-To-Protect Form"] img,
+.responsive-table tbody td[data-title="Irrevocable Trust Form"] img,
+.responsive-table tbody td[data-title="Trust And Corporate Docs"] img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px 0 0;
+}
+
+.responsive-table tbody td[data-title="Assets-To-Protect Form"] h4,
+.responsive-table tbody td[data-title="Irrevocable Trust Form"] h4,
+.responsive-table tbody td[data-title="Trust And Corporate Docs"] h4 {
+    text-align: left;
+    font: normal normal bold 14px/18px Roboto;
+    font-family: RobotoRegular, sans-serif;
+    margin: 0;
+    letter-spacing: 0;
+    color: #000;
+    opacity: 1;
+}
+
+.responsive-table tbody td[data-title="Assets-To-Protect Form"] p,
+.responsive-table tbody td[data-title="Irrevocable Trust Form"] p,
+.responsive-table tbody td[data-title="Trust And Corporate Docs"] p {
+    font: normal normal normal 14px/18px Roboto;
+    font-family: RobotoRegular, sans-serif;
+    margin: 0;
+    letter-spacing: 0;
+    color: #A3A7AB;
+    opacity: 1;
+}
+
+
+.responsive-table tbody td[data-title="Actions"] div img {
+    width: 20px;
+    height: 20px;
+
+}
+
+.responsive-table tbody td[data-title="Actions"] div p {
+    margin: 0;
+    text-align: left;
+    font: normal normal normal 12px/14px Roboto;
+    font-family: RobotoRegular, sans-serif;
+    letter-spacing: 0;
+    color: #A3A7AB;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.responsive-table tbody td[data-title="Status"] button {
+    width: 140px;
+    height: 30px;
+    border-radius: 15px;
+    opacity: 1;
+    text-align: center;
+    font: normal normal 14px/17px Roboto;
+    font-family: RobotoRegular, sans-serif;
+    letter-spacing: 0;
+    text-transform: capitalize;
+    border: 1px solid #000000;
+    color: #000000;
+    background-color: transparent;
+    padding: 6px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    transition: .3s ease;
+
+
+}
+
+.responsive-table tbody td[data-title="Status"] button.status-active {
+    color: #459290;
+    border: 1px solid #459290;
+}
+
+.responsive-table tbody td[data-title="Status"] button.status-in_process {
+    color: #C8083C;
+    border: 1px solid #C8083C;
+}
+
+.responsive-table tbody td[data-title="Status"] button.status-finished {
+    color: #A3A7AB;
+    border: 1px solid #A3A7AB;
+}
+
+.responsive-table tbody td[data-title="Status"] button.status-active:hover {
+    background-color: rgba(69, 146, 144, .1);
+}
+
+.responsive-table tbody td[data-title="Status"] button.status-in_process:hover {
+    background-color: rgba(200, 8, 60, .1);
+}
+
+.responsive-table tbody td[data-title="Status"] button.status-finished:hover {
+    background-color: rgba(163, 167, 171, .1);
+}
+
+.platinum-package-tbl,
+.gold-package-tbl,
+.silver-package-tbl,
+.bronze-package-tbl {
+    max-width: 1560px;
+    opacity: 1;
+    margin: auto;
+}
+
+/* Scrolling Style */
+.responsive-table th {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.responsive-table tbody {
+    scrollbar-width: thin;
+    scrollbar-color: #1A1A1A49 #E9E7DE;
+    height: 756px;
+    overflow: auto;
+
+}
+
+.responsive-table tbody::-webkit-scrollbar {
+    width: 20px;
+    background-color: #ffffff;
+}
+
+.responsive-table tbody::-webkit-scrollbar-track {
+    background: #A3A7AB;
+    width: 20px;
+    margin: 20px;
+}
+
+.responsive-table tbody::-webkit-scrollbar-thumb {
+    background-color: #D8D8D8;
+    border-radius: 20px;
+    border: 4px solid #A3A7AB;
+    width: 12px;
+
+}
+
+.responsive-table thead {
+    display: table;
+    table-layout: fixed;
+}
+
+.responsive-table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.responsive-table tfoot {
+    position: relative;
+}
+
+.responsive-table tfoot td {
+    padding: 0;
+}
+
+.responsive-table tbody td .send-form-bar {
+
+}
+
+.responsive-table tbody td .send-form-bar h4 {
+    color: #459290;
+}
+
+.responsive-table tbody td .filled-bar {
+
+}
+
+.responsive-table tbody td .filled-bar h4 {
+    color: #142A33;
+}
+
+.responsive-table tbody td .send-again-bar {
+
+}
+
+.responsive-table tbody td .send-again-bar img {
+    opacity: .5;
+
+}
+
+.responsive-table tbody td .send-again-bar h4 {
+    color: #A3A7AB;
+}
+
+.responsive-table tbody td[data-title="Email Address"] {
+    color: #39393B
+}
+
+.responsive-table tbody th[scope=row] a {
+    text-decoration: none;
+    color: #171719;
+}
+
+.section-wrap .personal-content {
+    max-width: 512px;
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    box-shadow: 0 0 20px #0000001A;
+    border-radius: 4px;
+    opacity: 1;
+    padding: 30px;
+}
+
+.section-wrap .personal-content > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-wrap .personal-content > div:first-child {
+    align-items: flex-start;
+    padding: 0 0 20px 0;
+
+}
+
+.section-wrap .personal-content > div:nth-child(2) {
+    padding: 15px 0;
+    flex-direction: column;
+}
+
+.section-wrap .personal-content > div:nth-child(3) {
+    padding: 20px 0;
+}
+
+
+.section-wrap .personal-content > div:nth-child(2) > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 0 9px 0;
+}
+.section-wrap .personal-content > div:nth-child(2) > div:last-child{
+    margin: 0;
+}
+.section-wrap .personal-content .individual_no {
+    font: normal normal bold 16px/19px Roboto;
+    font-family: RobotoRegula, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: #459290;
+    text-transform: capitalize;
+    opacity: 1;
+    margin: 0 0 10px 0;
+}
+
+.section-wrap .personal-content .individual_no span {
+    color: #A3A7AB;
+    margin: 0 4px 0 0;
+}
+
+.section-wrap .personal-content .person_naem {
+    text-align: left;
+    font: normal normal bold 18px/22px Roboto;
+    font-family: RobotoRegula, sans-serif;
+    letter-spacing: 0;
+    color: #171719;
+    text-transform: capitalize;
+    opacity: 1;
+    margin: 0 0 10px 0;
+}
+
+.section-wrap .personal-content .person_mail {
+    text-align: left;
+    font: normal normal normal 16px/18px Roboto;
+    font-family: RobotoRegular, sans-serif;
+    letter-spacing: 0;
+    color: #39393B;
+    opacity: 1;
+    margin: 0;
+}
+
+.section-wrap .personal-content .active-person {
+    width: 120px;
+    height: 30px;
+    background: #459290 0 0 no-repeat padding-box;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 30px;
+    text-align: left;
+    font: normal normal normal 14px/17px Roboto;
+    font-family: RobotoRegula, sans-serif;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    margin: 0;
+    border: none;
+    border-radius: 15px;
+    text-transform: capitalize;
+}
+
+.section-wrap .personal-content h5 {
+    text-align: left;
+    font: normal normal 16px/19px Roboto;
+    font-family: RobotoRegular, sans-serif;
+    letter-spacing: 0;
+    color: #142A33;
+    text-transform: capitalize;
+    opacity: 1;
+    margin: 0;
+}
+
+.section-wrap .personal-content h5 .date-content {
+    text-align: left;
+    font: normal normal normal 14px/18px Roboto;
+    font-family: RobotoRegular, sans-serif;
+    letter-spacing: 0;
+    color: #A3A7AB;
+    opacity: 1;
+    margin: 0 0 0 10px;
+}
+
+.section-wrap .personal-content .view-btn {
+    width: 120px;
+    height: 30px;
+    border: 1px solid #A3A7AB;
+    border-radius: 15px;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font: normal normal 14px/17px Roboto;
+    font-family: RobotoRegular, sans-serif;
+    letter-spacing: 0;
+    color: #A3A7AB;
+    text-transform: capitalize;
+    padding: 6px 30px;
+    background-color: transparent;
+}
+
+.section-wrap .personal-content .fully_content {
+    color: #459290;
+}
+
+.section-wrap .personal-content h4 {
+    font: normal normal 18px/26px Roboto;
+    font-family: RobotoRegular, sans-serif;
+    letter-spacing: 0;
+    color: #142A33;
+    text-transform: uppercase;
+    opacity: 1;
+    margin: 0;
+}
+
+.section-wrap .personal-content .edit-info-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 30px;
+    border: 1px solid #142A33;
+    border-radius: 4px;
+    opacity: 1;
+    width: 100%;
+    text-align: center;
+    font: normal normal 16px/19px Roboto;
+    font-family: RobotoRegular, sans-serif;
+
+    letter-spacing: 0;
+    color: #142A33;
+    background-color: transparent;
+}
+
+.section-wrap .personal-content .edit-info-btn > span {
+    display: flex;
+    align-items: center;
+}
+
+.section-wrap .personal-content .edit-info-btn img {
+    margin: 0 12px 0 0;
+}
+
+/* Medias */
+@media (max-width: 1800px) {
+    .wrapper-body section .section-wrap {
+        padding: 0 15px;
+    }
+
+    .responsive-table thead th:nth-child(1),
+    .responsive-table tbody th[scope=row] {
+        width: 150px;
+    }
+
+    .responsive-table thead th:nth-child(6),
+    .responsive-table tbody td[data-title=Status] {
+        /*background-color: rgba(255,0,0,.1);*/
+        width: 185px;
+    }
+
+    .responsive-table thead th:nth-child(7),
+    .responsive-table tbody td[data-title=Actions] {
+        /*background-color: rgba(255,0,0,.1);*/
+        width: 100px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .responsive-table thead th:nth-child(1), .responsive-table tbody th[scope=row] {
+        width: 120px;
+        /*background-color: rgba(0,0,255,.1);*/
+        font-size: 13px;
+    }
+
+    .responsive-table thead th:nth-child(7), .responsive-table tbody td[data-title=Actions] {
+        /*background-color: rgba(0,0,255,.1);*/
+        width: 70px;
+    }
+
+    .responsive-table thead th:nth-child(6), .responsive-table tbody td[data-title=Status] {
+        /*background-color: rgba(0,0,255,.1);*/
+        width: 150px;
+    }
+
+    .responsive-table thead th {
+        padding: 15px 10px;
+        font-size: 13px;
+
+    }
+
+    .responsive-table tbody td[data-title="Status"] button {
+        width: 120px;
+        font-size: 12px;
+        line-height: initial;
+    }
+
+    .responsive-table tbody td[data-title="Assets-To-Protect Form"] img,
+    .responsive-table tbody td[data-title="Irrevocable Trust Form"] img,
+    .responsive-table tbody td[data-title="Trust And Corporate Docs"] img {
+        margin: 0 5px 0 0;
+    }
+
+    .responsive-table tbody td[data-title="Assets-To-Protect Form"] p,
+    .responsive-table tbody td[data-title="Irrevocable Trust Form"] p,
+    .responsive-table tbody td[data-title="Trust And Corporate Docs"] p,
+    .responsive-table tbody td[data-title="Assets-To-Protect Form"] h4,
+    .responsive-table tbody td[data-title="Irrevocable Trust Form"] h4,
+    .responsive-table tbody td[data-title="Trust And Corporate Docs"] h4 {
+        font-size: 12px;
+    }
+
+    .responsive-table tbody td[data-title="Assets-To-Protect Form"] img,
+    .responsive-table tbody td[data-title="Irrevocable Trust Form"] img,
+    .responsive-table tbody td[data-title="Trust And Corporate Docs"] img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+@media (max-width: 1400px) {
+    .responsive-table {
+        width: 1130px;
+    }
+}
+
+@media (max-width: 769px) {
+    .responsive-table tbody td[data-title="Assets-To-Protect Form"] > div,
+    .responsive-table tbody td[data-title="Irrevocable Trust Form"] > div,
+    .responsive-table tbody td[data-title="Trust And Corporate Docs"] > div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: max-content;
+        margin: 0 0 0 auto;
+    }
+
+    .responsive-table tbody td[data-title="Email Address"] {
+        text-align: right;
+    }
+
+    .responsive-table tbody td[data-title="Status"] button {
+        margin: 0 0 0 auto;
+        transition: .3s ease;
+    }
+
+
+    .responsive-table tbody td[data-title="Actions"] > div {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .responsive-table tbody td[data-title="Actions"] div img {
+        margin: 0 10px 0 0;
+    }
+
+    .responsive-table tbody td {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .scroll-top-icon {
+        margin-top: 0 !important;
+    }
+
+    .responsive-table thead th:nth-child(6), .responsive-table tbody td[data-title=Status],
+    .responsive-table thead th:nth-child(7), .responsive-table tbody td[data-title=Actions] {
+        width: 100%;
+    }
+
+    .responsive-table tbody tr {
+        margin: 0 0 15px 0;
+        border-bottom: 1px solid #EBEBEB;
+    }
+
+    .responsive-table tbody tr:last-child {
+        margin: 0;
+        border-bottom: none;
+    }
+
+    .responsive-table thead th:nth-child(6), .responsive-table tbody td[data-title=Status] {
+        padding: 0.75em 5px 0.75em 0.5em;
+    }
+}
+
+@media (max-width: 768px) {
+    .responsive-table {
+        width: auto;
+    }
+    .section-wrap .personal-content {
+        padding: 20px 15px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .section-wrap .personal-content h5,
+    .section-wrap .personal-content h4,
+    .section-wrap .personal-content .edit-info-btn {
+        font-size: 14px;
+        line-height: initial;
+    }
+
+    .section-wrap .personal-content .edit-info-btn img {
+        max-width: 20px;
+    }
+
+    .section-wrap .personal-content h5 .date-content {
+        font-size: 12px;
+        line-height: initial;
+    }
+
+    .section-wrap .personal-content .view-btn {
+        width: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .section-wrap .personal-content h5 .date-content {
+        margin: 5px 0 0 0;
+        display: block;
+    }
+
+    .section-wrap .personal-content > div:nth-child(2) > div {
+        align-items: flex-start;
+    }
+
+    .section-wrap .personal-content > div:first-child {
+        flex-direction: column;
+    }
+
+    .section-wrap .personal-content .active-person {
+        margin-top: 15px;
+    }
+}
