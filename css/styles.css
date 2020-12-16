@@ -742,8 +742,12 @@ section .section-wrap.dashboard-section g[aria-controls=id-225][aria-checked="tr
 
 
 @media (max-width: 480px) {
+    .wrapper-body section .packages-switch-btns-bar .package-item:last-child{
+        margin: 0;
+    }
     .wrapper-body section .packages-switch-btns-bar .package-item {
         width: 100%;
+        margin: 20px;
     }
     .wrapper-body section .packages-switch-btns-bar .package-name{
         width: initial;
