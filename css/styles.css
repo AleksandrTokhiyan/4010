@@ -405,6 +405,12 @@ section .section-wrap.dashboard-section .total-payments-packages .progress-val {
 
 section .section-wrap.dashboard-section .total-payments-packages .progress-val span {
     display: block;
+    text-align: right;
+    font: normal normal normal 16px/11px Segoe UI;
+    font-family: "Segoe UI", sans-serif;
+    letter-spacing: 0;
+    color: #58595B;
+    opacity: 1;
 }
 
 section .section-wrap.dashboard-section .total-payments-packages .progress-val span:before {
@@ -586,6 +592,18 @@ section .section-wrap.dashboard-section g[aria-controls=id-225][aria-checked="tr
     .wrapper-body header {
         padding: 15px;
     }
+    .wrapper-body section .section-wrap {
+        padding: 0 15px;
+    }
+    .wrapper-body header nav{
+        margin: 0 auto 0 25px;
+    }
+    .wrapper-body section .section-wrap {
+
+        margin: 30px auto 0 25px;
+    }
+    .wrapper-body section .section-wrap.dashboard-section {
+    }
 }
 
 @media (max-width: 1400px) {
@@ -604,6 +622,28 @@ section .section-wrap.dashboard-section g[aria-controls=id-225][aria-checked="tr
     .wrapper-body section .packages-switch-btns-bar .package-item > span {
         font-size: 14px;
         padding: 0 5px;
+    }
+    section .section-wrap.dashboard-section .header-bar .total-payment-bar h2 {
+        font-size: 21px;
+        line-height: initial;
+    }
+
+    section .section-wrap.dashboard-section .total-payments-packages h4, section .section-wrap.dashboard-section .packages-profit-bar h4 {
+        font-size: 19px;
+        line-height: initial;
+    }
+
+    section .section-wrap.dashboard-section .header-bar .total-payment-bar p,
+    section .section-wrap.dashboard-section .header-bar .date-bar p,
+    section .section-wrap.dashboard-section .total-payments-packages .total-payments-values .total-payment-val-item p {
+        font-size: 17px;
+        line-height: initial;
+    }
+
+    section .section-wrap.dashboard-section .header-bar .date-bar img {
+        margin: 0 0 0 15px;
+        width: 24px;
+        height: 24px;
     }
 }
 
@@ -634,6 +674,60 @@ section .section-wrap.dashboard-section g[aria-controls=id-225][aria-checked="tr
         height: 17px;}
     section .section-wrap.dashboard-section #chartdiv {
         max-width: 660px;
+    }
+    section .section-wrap.dashboard-section .header-bar .total-payment-bar h2 {
+        font-size: 17px;
+        line-height: initial;
+        margin: 0 5px 0 0;
+    }
+
+    section .section-wrap.dashboard-section .header-bar .total-payment-bar p,
+    section .section-wrap.dashboard-section .header-bar .date-bar p,
+    section .section-wrap.dashboard-section .total-payments-packages .total-payments-values .total-payment-val-item p {
+        font-size: 14px;
+    }
+
+    .wrapper-body section .section-wrap.dashboard-section {
+        margin: 30px auto 0 20px;
+    }
+
+    section .section-wrap.dashboard-section .header-bar .date-bar img {
+        margin: 0 0 0 5px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .wrapper-body section .section-wrap.dashboard-section {
+        padding: 0 7px;
+
+    }
+
+    section .section-wrap.dashboard-section .total-payments-packages {
+        padding: 20px;
+    }
+
+    section .section-wrap.dashboard-section .total-payments-packages h4, section .section-wrap.dashboard-section .packages-profit-bar h4 {
+        font-size: 17px;
+    }
+
+    section .section-wrap.dashboard-section .total-payments-packages .total-payments-values div > div:first-child {
+        margin: 0 30px 0 0;
+    }
+
+    section .section-wrap.dashboard-section .total-payments-packages .total-payments-values .total-payment-val-item h5,
+    section .section-wrap.dashboard-section .total-payments-packages .progress-val span,
+    section .section-wrap.dashboard-section g text {
+        font-size: 14px;
+        line-height: initial;
+    }
+
+    #chartdiv:after {
+        bottom: 80px;
+    }
+
+    section .section-wrap.dashboard-section .packages-profit-bar {
+        padding: 20px;
+        margin: 30px 0 0 0;
     }
 }
 
@@ -736,10 +830,26 @@ section .section-wrap.dashboard-section g[aria-controls=id-225][aria-checked="tr
         width: 100%;
     }
     /*  /Menu Media  */
+    .wrapper-body section .section-wrap.dashboard-section {
+        margin: 20px 0 0 0;
+        padding: 0 15px;
+    }
 
+    section .section-wrap.dashboard-section .total-payments-packages .total-payments-values div > div:first-child {
+        margin: 0 20px 0 0;
+    }
 
 }
+@media (max-width: 522px) {
+    section .section-wrap.dashboard-section .header-bar,
+    section .section-wrap.dashboard-section .header-bar .total-payment-bar {
+        flex-wrap: wrap;
+    }
 
+    #chartdiv:after {
+        bottom: 150px;
+    }
+}
 
 @media (max-width: 480px) {
     .wrapper-body section .packages-switch-btns-bar .package-item:last-child{
@@ -762,5 +872,42 @@ section .section-wrap.dashboard-section g[aria-controls=id-225][aria-checked="tr
     .wrapper-body header .page_name a > span{
         margin: 0 10px 0 0 ;
     }
+    section .section-wrap.dashboard-section .header-bar .total-payment-bar p,
+    section .section-wrap.dashboard-section .header-bar .date-bar p,
+    section .section-wrap.dashboard-section .total-payments-packages .total-payments-values .total-payment-val-item p {
+        font-size: 12px;
+    }
 
+    section .section-wrap.dashboard-section .total-payments-packages .total-payments-values {
+        flex-direction: column;
+    }
+
+    section .section-wrap.dashboard-section .total-payments-packages .total-payments-values .aside-right > div {
+        display: flex;
+    }
+
+    section .section-wrap.dashboard-section .total-payments-packages .total-payments-values .aside-right {
+        margin: 10px 0 0 0;
+    }
+
+    section .section-wrap.dashboard-section .total-payments-packages .total-payments-values div > div:first-child {
+        margin: 0 14px 0 0;
+    }
+
+    section .section-wrap.dashboard-section .total-payments-packages .total-payments-values .aside-right .total-payment-val-item h5 {
+        margin: 0 5px 0 0;
+    }
+
+    section .section-wrap.dashboard-section .header-bar .total-payment-bar {
+        margin-bottom: 10px
+    }
+
+    #chartdiv:after {
+        bottom: 160px;
+        font-size: 40px;
+    }
+
+    section .section-wrap.dashboard-section .packages-profit-bar h4 span {
+        font-size: 16px;
+    }
 }

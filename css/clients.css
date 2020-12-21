@@ -587,9 +587,6 @@
 
 /* Medias */
 @media (max-width: 1800px) {
-    .wrapper-body section .section-wrap {
-        padding: 0 15px;
-    }
 
     .responsive-table thead th:nth-child(1),
     .responsive-table tbody th[scope=row] {
@@ -669,6 +666,9 @@
 }
 
 @media (max-width: 769px) {
+    .wrapper-body section .section-wrap{
+        margin: 0;
+    }
     .responsive-table tbody td[data-title="Assets-To-Protect Form"] > div,
     .responsive-table tbody td[data-title="Irrevocable Trust Form"] > div,
     .responsive-table tbody td[data-title="Trust And Corporate Docs"] > div {
