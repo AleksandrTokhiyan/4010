@@ -7,10 +7,11 @@ body {
     margin: 0;
 }
 
-button, input, textarea , label{
+button, input, textarea, label {
     outline: none !important;
 }
-button{
+
+button {
     cursor: pointer;
 }
 
@@ -52,6 +53,7 @@ textarea {
 .btn-bar > button {
     width: 100%;
 }
+
 .btn-bar > a {
     width: 100%;
 }
@@ -71,12 +73,20 @@ button.light-btn-style {
     color: #ffffff;
 }
 
-button.site-btn-style ,
+button.site-btn-style,
 a.site-btn-style {
-    background: #142A33 0 0 no-repeat padding-box;
-    border: 1px solid #142A33;
+    background: rgba(20, 42, 51, .7) 0 0 no-repeat padding-box;
+    border: 1px solid rgba(20, 42, 51, .7);
     opacity: 1;
     color: #fff;
+    transition: .3s ease;
+}
+
+button.site-btn-style:hover,
+a.site-btn-style:hover {
+    background-color: #142A33;
+    border-color: #142A33;
+
 }
 
 

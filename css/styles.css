@@ -180,6 +180,7 @@
     color: #142A33;
     opacity: 1;
     margin: 0;
+    text-transform: capitalize;
 }
 .wrapper-body header .page_name a {
     display: flex;
@@ -587,7 +588,278 @@ section .section-wrap.dashboard-section g[aria-controls=id-225][aria-checked="tr
 section .section-wrap.dashboard-section g[aria-controls=id-225][aria-checked="true"] g text {
     fill: #A7E1E1;
 }
+
+
 /************************************************************************************************/
+
+.for-information > div .select-content.select-package,
+.for-information > div .form-group.event-name-group,
+.for-information > div .form-group.email-address-group,
+.for-information > div .form-group.phone-number-group,
+.for-information > div .form-group.address-group,
+.for-information > div .form-group.cvv-group,
+.for-information > div .form-group.expiry-group {
+    margin: 0;
+}
+
+.wrapper-body section .section-wrap.for-information {
+    max-width: 710px;
+}
+
+.for-information > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 0 30px 0;
+}
+
+.for-information > div > h3 {
+    width: 100%;
+
+    text-align: left;
+    font: normal normal 18px/26px Roboto;
+    font-family: RobotoRegula, sans-serif;
+    letter-spacing: 0;
+    color: #142A33;
+    text-transform: capitalize;
+    opacity: 1;
+    padding: 0 0 6px 0;
+    margin: 0 0 22px 0;
+    border-bottom: 1px solid rgba(163, 167, 171, .4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.for-information > div .select-content,
+.for-information > div .form-group {
+    width: 48%;
+    margin: 0 0 26px 0;
+    max-width: 340px;
+    align-content: flex-start;
+
+
+}
+
+.for-information > div .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.for-information > div .form-group > div {
+    width: 48%;
+    max-width: 155px;
+    margin: 0;
+}
+
+.for-information > div .form-group > div.select-content .custom-select-trigger {
+    font-family: RobotoRegula, sans-serif;
+}
+
+.for-information .form-group label {
+    width: 100%;
+    margin: 0 0 6px 0;
+    text-align: left;
+    font: normal normal normal 16px/19px Roboto;
+    font-family: RobotoRegula, sans-serif;
+    letter-spacing: 0;
+    color: #39393B;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.for-information .form-group input {
+    width: 100%;
+}
+
+.for-information .form-group input {
+    height: 48px;
+    text-align: left;
+    font: normal normal normal 16px/19px Roboto;
+    font-family: RobotoRegula, sans-serif;
+
+    letter-spacing: 0;
+    color: #39393B;
+    padding: 13px 15px 13px;
+    border: 1px solid #D8D8D8;
+    border-radius: 4px;
+    opacity: 1;
+    text-transform: capitalize;
+}
+
+.for-information .form-group input::placeholder {
+    color: rgba(57, 57, 59, 4);
+
+}
+
+.for-information .credit-card-banner {
+    width: 100%;
+    margin: 12px 0 26px;
+}
+
+.for-information .credit-card-banner .card-item {
+    border: 1px solid #A3A7AB;
+    border-radius: 4px;
+    opacity: 0.5;
+    width: 144px;
+    height: 76px;
+    margin: 0 30px 0 0;
+    padding: 11px 28px;
+    position: relative;
+}
+
+.for-information .credit-card-banner .card-item.active-card {
+    opacity: 1;
+    border-color: #142A33;
+}
+
+.for-information .credit-card-banner .card-item.active-card:after {
+    content: "\f00c ";
+    font-family: FontAwesome, sans-serif;
+    position: absolute;
+    right: -13px;
+    top: -13px;
+    background-color: #142A33;
+    color: #ffffff;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.for-information .credit-card-banner .card-item:last-child {
+    margin: 0;
+}
+
+.for-information .credit-card-banner .card-item img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.for-information .buttons_bar {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.for-information .buttons_bar button {
+    width: 48%;
+    max-width: 340px;
+    height: 48px;
+    border-radius: 4px;
+    opacity: 1;
+    text-align: center;
+    font: normal normal 16px/19px Roboto;
+    font-family: RobotoRegula, sans-serif;
+    letter-spacing: 0;
+    text-transform: capitalize;
+    transition: .3s ease;
+}
+
+.for-information .buttons_bar button.light-btn-style {
+    color: #142A33;
+    border-color: #142A33;
+}
+.address-group{
+    width: 100% !important;
+    max-width: 100% !important;
+}
+.avatar-upload {
+    display: flex;
+}
+
+.avatar-upload .avatar-preview {
+    margin: 0 30px 0 0;
+}
+
+.avatar-upload .avatar-edit {
+    display: flex;
+    margin: 35px 0 0 0;
+}
+
+.avatar-upload .avatar-edit input {
+    display: none;
+}
+
+.avatar-upload .account-info-bar h2 {
+    text-align: left;
+    font: normal normal 22px/27px Roboto, sans-serif;
+    letter-spacing: 0;
+    color: #142A33;
+    text-transform: capitalize;
+    opacity: 1;
+    margin: 0 0 9px 0;
+}
+
+.avatar-upload .account-info-bar p {
+    text-align: left;
+    font: normal normal normal 16px/19px Roboto, sans-serif;
+    letter-spacing: 0;
+    color: rgba(57, 57, 59, .4);
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.avatar-upload .avatar-edit input + label {
+    padding: 12px;
+    background-color: rgba(69,146,144, .7);
+    text-align: center;
+    font: normal normal 14px/17px Roboto, sans-serif;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    opacity: 1;
+    width: 100%;
+    transition: .3s ease;
+}
+
+.avatar-upload .avatar-edit input + label:hover {
+    background-color: #459290;
+}
+
+.avatar-upload .avatar-preview {
+    width: 130px;
+    height: 130px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.avatar-upload .avatar-preview > div {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.for-information > div .form-group.pass-group {
+    margin: 20px 0 0 0;
+}
+
+.hide-form-group {
+    display: none !important;
+}
+
+.change-pass-btn {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    text-align: right;
+    font: normal normal 18px/26px Roboto, sans-serif;
+    letter-spacing: 0;
+    color: #459290;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
 @media (max-width: 1800px) {
     .wrapper-body header {
         padding: 15px;
@@ -729,6 +1001,17 @@ section .section-wrap.dashboard-section g[aria-controls=id-225][aria-checked="tr
         padding: 20px;
         margin: 30px 0 0 0;
     }
+    .for-information .credit-card-banner .card-item {
+        margin: 0 20px 0 0;
+        width: 140px;
+    }
+    .for-information .credit-card-banner .card-item.active-card:after{
+        font-size: 10px;
+        width: 20px;
+        height: 20px;
+        right: -10px;
+        top: -10px;
+    }
 }
 
 @media (max-width: 769px) {
@@ -838,7 +1121,44 @@ section .section-wrap.dashboard-section g[aria-controls=id-225][aria-checked="tr
     section .section-wrap.dashboard-section .total-payments-packages .total-payments-values div > div:first-child {
         margin: 0 20px 0 0;
     }
+    .wrapper-body header{
+        position: fixed;
+    }
+    .wrapper-body section {
+        margin: 110px 0 0 0;
+    }
+    .wrapper-body section .section-wrap.for-information {
+        max-width: 100%;
+        margin: 30px 0 0 0;
+    }
 
+    .for-information .credit-card-banner .card-item {
+        height: 70px;
+        width: 130px;
+
+        padding: 7px 25px;
+    }
+    .avatar-upload .account-info-bar h2{
+        font-size: 19px;
+        line-height: initial;
+    }
+    .for-information .form-group label,
+    .for-information .select-content label,
+    .for-information .buttons_bar button,
+    .avatar-upload .account-info-bar p,
+    .select-content .custom-option,
+    .for-information .form-group input::placeholder,
+    .for-information .form-group input {
+        font-size: 14px;
+        line-height: initial;
+    }
+    .avatar-upload .avatar-edit {
+
+        margin: 40px 0 0 0;
+    }
+    .select-content .custom-option {
+        padding: 7px 20px;
+    }
 }
 @media (max-width: 522px) {
     section .section-wrap.dashboard-section .header-bar,
@@ -852,6 +1172,12 @@ section .section-wrap.dashboard-section g[aria-controls=id-225][aria-checked="tr
 }
 
 @media (max-width: 480px) {
+    .wrapper-body header .user_avatar_bar .user-name{
+        font-size: 16px;
+    }
+    .wrapper-body{
+        height: auto;
+    }
     .wrapper-body section .packages-switch-btns-bar .package-item:last-child{
         margin: 0;
     }
@@ -909,5 +1235,58 @@ section .section-wrap.dashboard-section g[aria-controls=id-225][aria-checked="tr
 
     section .section-wrap.dashboard-section .packages-profit-bar h4 span {
         font-size: 16px;
+    }
+    .for-information > div .select-content, .for-information > div .form-group, .select-content .custom-select-wrapper {
+        width: 100%;
+        max-width: 100%;
+    }
+    .for-information .credit-card-banner .card-item.active-card:after{
+        font-size: 7px;
+        width: 15px;
+        height: 15px;
+        right: -7px;
+        top: -7px;
+    }
+    .for-information .credit-card-banner .card-item {
+        margin: 0 15px 0 0;
+    }
+
+    .for-information .credit-card-banner .card-item {
+        height: 55px;
+        width: 95px;
+        padding: 7px 10px;
+    }
+
+    .for-information > div > h3,
+    .avatar-upload .account-info-bar h2,
+    .change-pass-btn{
+        font-size: 16px;
+    }
+
+    .for-information .form-group label,
+    .for-information .select-content label,
+    .for-information .buttons_bar button,
+    .avatar-upload .account-info-bar p,
+    .select-content .custom-option,
+    .avatar-upload .avatar-edit input + label,
+    .for-information .form-group input::placeholder,
+    .for-information .form-group input {
+        font-size: 12px;
+        line-height: initial;
+    }
+
+    .for-information > div .select-content, .for-information > div .form-group,
+    .for-information > div .select-content.select-package,
+    .for-information > div .form-group.email-address-group,
+    .for-information > div .form-group.cvv-group {
+
+        margin-bottom: 20px;
+    }
+
+    .for-information > div .form-group > div {
+        max-width: 100%;
+    }
+    .avatar-upload .avatar-edit {
+        margin: 50px 0 0 0;
     }
 }

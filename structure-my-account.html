@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Structure/My Account </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-face.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/app.css">
+    <style>
+
+    </style>
+
+</head>
+<body>
+
+<div class="wrapper">
+    <input type="checkbox" id="menuToggler" class="input-toggler" value="1" autofocus="true"/>
+    <label for="menuToggler" id="menuTogglerLabel" class="menu-toggler" role="button" aria-pressed="false"
+           aria-expanded="false" aria-label="Navigation button">
+        <span class="menu-toggler__line"></span>
+        <span class="menu-toggler__line"></span>
+        <span class="menu-toggler__line"></span>
+    </label>
+    <div id="sidebar" role="navigation" aria-labelledby="menuTogglerLabel" aria-hidden="true"
+         class=" sidebar">
+        <div class="navigation-bar">
+            <div class="logo-bar">
+                <img src="images/Fortune-logo.png" alt="Logo" title="Logo">
+            </div>
+            <div class="switch-button"><span class="active"></span>
+                <button class="switch-button-case left active-case" id="structures-btn">Structures</button>
+                <button class="switch-button-case right">Insurance</button>
+            </div>
+            <div class="menu-items-bar">
+                <div>
+                    <a href="structure-dashboard.html">
+                       <span class="icon-bar">
+                           <img src="images/icons/Dashboard-icon.svg" alt="Dashboard Icon" title="Dashboard">
+                       </span>
+                        <span class="name-bar">Dashboard</span>
+                    </a>
+                    <a href="structure-clients.html">
+                       <span class="icon-bar">
+                           <img src="images/icons/Clients-icon.svg" alt="Clients Icon" title="Clients">
+                       </span>
+                        <span class="name-bar">Clients</span>
+                    </a>
+                    <a href="structure-invite-new-clients.html">
+                       <span class="icon-bar">
+                           <img src="images/icons/Invite-New-Clients-icon.svg"
+                                alt="Invite New Clients-icon Icon"
+                                title="Invite-New-Clients-icon">
+                       </span>
+                        <span class="name-bar">invite new clients</span>
+                    </a>
+                    <a href="structure-my-account.html" class="active-menu-item">
+                       <span class="icon-bar">
+                           <img src="images/icons/My-Account-icon.svg" alt="My Account Icon" title="My Account">
+                       </span>
+                        <span class="name-bar">My Account</span>
+                    </a>
+                    <a href="#">
+                       <span class="icon-bar">
+                           <img src="images/icons/Settings-icon.svg" alt="Settings Icon" title="Settings">
+                       </span>
+                        <span class="name-bar">Settings</span>
+                    </a>
+                </div>
+                <a href="#" id="logoutItem">
+                       <span class="icon-bar">
+                           <img src="images/icons/Logout-icon.svg" alt="Logout Icon" title="Logout">
+                       </span>
+                    <span class="name-bar">Logout</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper-body">
+        <header>
+            <nav>
+                <div class="page_name">
+                    <h1>My account</h1>
+                </div>
+                <div class="user_avatar_bar">
+                    <h3 class="user-name">James Smith</h3>
+                    <img src="images/James-Smith-avatar.png" class="user-avatar" alt="User Avatar"
+                         title="User Avatar">
+                </div>
+            </nav>
+        </header>
+        <!-- /header  -->
+
+        <section>
+            <div class="section-wrap for-information">
+                <div class="account-info-bar">
+                    <div class="avatar-upload">
+                        <div class="avatar-preview">
+                            <div id="imagePreview" style="background-image: url(images/James-Smith.png);">
+                            </div>
+                        </div>
+                        <div class="account-info-bar">
+                            <h2>James Smith</h2>
+                            <p>company name</p>
+                            <div class="avatar-edit">
+                                <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg"/>
+                                <label for="imageUpload">change picture</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3>personal information
+                        <button class="change-pass-btn">Change Password</button>
+                    </h3>
+                    <div class="form-group">
+                        <label for="first_name">First name</label>
+                        <input type="text" placeholder="First Name" id="first_name">
+                    </div>
+                    <div class="form-group">
+                        <label for="last_name">Last name</label>
+                        <input type="text" placeholder="Last name" id="last_name">
+                    </div>
+                    <div class="form-group email-address-group">
+                        <label for="email_address">Email address</label>
+                        <input type="email" placeholder="Email address" id="email_address">
+                    </div>
+                    <div class="form-group phone-number-group">
+                        <label for="phone_number">Phone number</label>
+                        <input type="number" placeholder="Phone number" id="phone_number">
+                    </div>
+                    <div class="form-group hide-form-group pass-group">
+                        <label for="old_password">old password</label>
+                        <input type="number" placeholder="********" id="old_password">
+                    </div>
+                    <div class="form-group hide-form-group pass-group">
+                        <label for="new_password">new password</label>
+                        <input type="number" placeholder="********" id="new_password">
+                    </div>
+
+
+                </div>
+                <div>
+                    <h3>address</h3>
+                    <div class="form-group">
+                        <label for="zip_code">Zip Code</label>
+                        <input type="text" placeholder="***" id="zip_code">
+                    </div>
+                    <div class="form-group">
+                        <label for="npn_code">national Producer Number (NPN)</label>
+                        <input type="text" placeholder="********" id="npn_code">
+                    </div>
+                    <div class="form-group address-group">
+                        <label for="address">physical address</label>
+                        <input type="text" placeholder="physical address" id="address">
+                    </div>
+                </div>
+                <div>
+                    <h3>Credit Card information</h3>
+                    <div class="credit-card-banner">
+                        <button class="card-item active-card">
+                            <img src="images/visa.png" alt="VISA" title="VISA">
+                        </button>
+                        <button class="card-item">
+                            <img src="images/masterCard.png" alt="MasterCard" title="MasterCard">
+                        </button>
+                        <button class="card-item">
+                            <img src="images/discover.png" alt="DISCOVER" title="DISCOVER">
+                        </button>
+                    </div>
+                    <div class="form-group">
+                        <label for="credit_card_number">Credit Card Number</label>
+                        <input type="number" placeholder="**** **** **** ****" id="credit_card_number">
+                    </div>
+                    <div class="form-group">
+                        <label for="card_holder_name">Card Holder Name</label>
+                        <input type="text" placeholder="Card Holder Name" id="card_holder_name">
+                    </div>
+                    <div class="form-group cvv-group">
+                        <label for="cvv">CVV</label>
+                        <input type="number" placeholder="***" id="cvv">
+                    </div>
+                    <div class="form-group expiry-group">
+                        <div class="select-content">
+                            <label for="expiry_month">Expiry Month</label>
+                            <select name="expiry_month" id="expiry_month" class="custom-select sources"
+                                    placeholder="**">
+                                <option value="val-1">Value 1</option>
+                                <option value="val-2">Value 2</option>
+                                <option value="val-3">Value 3</option>
+                            </select>
+                        </div>
+                        <div class="select-content">
+                            <label for="expiry_year">Expiry Year</label>
+                            <select name="expiry_year" id="expiry_year" class="custom-select sources"
+                                    placeholder="**">
+                                <option value="val-1">Value 1</option>
+                                <option value="val-2">Value 2</option>
+                                <option value="val-3">Value 3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons_bar">
+                    <button class="light-btn-style">Cancel</button>
+                    <button class="site-btn-style">Save Changings</button>
+                </div>
+            </div>
+        </section>
+        <!--  /Section  -->
+        <footer>
+
+        </footer>
+    </div>
+</div>
+<script src="lib/js/jquery-3.3.1.min.js"></script>
+
+<script src="js/select.js"></script>
+<script src="js/switch-buttons.js"></script>
+<script src="js/script.js"></script>
+<script>
+
+
+</script>
+<script>
+
+</script>
+</body>
+</html>

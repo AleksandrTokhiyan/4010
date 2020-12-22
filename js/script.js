@@ -15,6 +15,23 @@ $(document).on('click', '.package-item', function () {
 
 });
 
+// Upload Image(changing)
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        let reader = new FileReader();
+        reader.onload = function (e) {
+            $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
+            $('#imagePreview').hide();
+            $('#imagePreview').fadeIn(650);
+        }
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+$("#imageUpload").change(function () {
+    readURL(this);
+});
+
 
 /*  Media Menu toggle  */
 
@@ -27,4 +44,18 @@ menuToggler.addEventListener('change', function () {
     } else {
         menuTogglerLabel.setAttribute('aria-pressed', 'false');
     }
+});
+
+
+/***************************************************************************************/
+
+
+$(document).on('click', '.card-item', function () {
+    let c = $(this);
+    $(c).addClass("active-card").siblings().removeClass("active-card");
+});
+
+$(document).on("click", ".change-pass-btn", function () {
+    $(this).hide();
+    $(".pass-group").removeClass("hide-form-group");
 });
