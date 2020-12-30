@@ -6,7 +6,7 @@ $(".custom-select").each(function () {
     template += '<span class="custom-select-trigger">' + $(this).attr("placeholder") + '</span>';
     template += '<div class="custom-options">';
     $(this).find("option").each(function () {
-        template += '<span class="custom-option ' + $(this).attr("class") + '" data-value="' + $(this).attr("value") + '">' + $(this).html() + '</span>';
+        template += '<span class="custom-option ' + $(this).attr("class") + '" data-value="' + $(this).attr("value") + '" data-show="' + '.' + $(this).attr("value") + '">' + $(this).html() + '</span>';
     });
     template += '</div></div>';
 
@@ -28,6 +28,7 @@ $(".custom-select-trigger").on("click", function () {
 });
 $(".custom-option").on("click", function () {
     $(this).parents(".custom-select-wrapper").find("select").val($(this).data("value"));
+    $(this).parents(".custom-select-wrapper").find("select").val($(this).data("show"));
     $(this).parents(".custom-options").find(".custom-option").removeClass("selection");
     $(this).addClass("selection");
     $(this).parents(".custom-select").removeClass("opened");

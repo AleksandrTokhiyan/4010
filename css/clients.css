@@ -193,6 +193,7 @@
 }
 
 .responsive-table tbody td[data-title="Assets-To-Protect Form"] > div,
+.responsive-table tbody td[data-title="Initial Consultation"] > div,
 .responsive-table tbody td[data-title="Irrevocable Trust Form"] > div,
 .responsive-table tbody td[data-title="Trust And Corporate Docs"] > div {
     display: flex;
@@ -201,6 +202,7 @@
 }
 
 .responsive-table tbody td[data-title="Assets-To-Protect Form"] > div > div:first-child,
+.responsive-table tbody td[data-title="Initial Consultation"] > div > div:first-child,
 .responsive-table tbody td[data-title="Irrevocable Trust Form"] > div > div:first-child,
 .responsive-table tbody td[data-title="Trust And Corporate Docs"] > div > div:first-child {
     display: flex;
@@ -208,6 +210,7 @@
 }
 
 .responsive-table tbody td[data-title="Assets-To-Protect Form"] img,
+.responsive-table tbody td[data-title="Initial Consultation"] img,
 .responsive-table tbody td[data-title="Irrevocable Trust Form"] img,
 .responsive-table tbody td[data-title="Trust And Corporate Docs"] img {
     width: 24px;
@@ -216,6 +219,7 @@
 }
 
 .responsive-table tbody td[data-title="Assets-To-Protect Form"] h4,
+.responsive-table tbody td[data-title="Initial Consultation"] h4,
 .responsive-table tbody td[data-title="Irrevocable Trust Form"] h4,
 .responsive-table tbody td[data-title="Trust And Corporate Docs"] h4 {
     text-align: left;
@@ -228,6 +232,7 @@
 }
 
 .responsive-table tbody td[data-title="Assets-To-Protect Form"] p,
+.responsive-table tbody td[data-title="Initial Consultation"] p,
 .responsive-table tbody td[data-title="Irrevocable Trust Form"] p,
 .responsive-table tbody td[data-title="Trust And Corporate Docs"] p {
     font: normal normal normal 14px/18px Roboto;
@@ -384,16 +389,19 @@
     color: #142A33;
 }
 
-.responsive-table tbody td .send-again-bar {
+.responsive-table tbody td .send-again-bar ,
+.responsive-table tbody td .waiting-bar {
 
 }
 
-.responsive-table tbody td .send-again-bar img {
+.responsive-table tbody td .send-again-bar img ,
+.responsive-table tbody td .waiting-bar img {
     opacity: .5;
 
 }
 
-.responsive-table tbody td .send-again-bar h4 {
+.responsive-table tbody td .send-again-bar h4 ,
+.responsive-table tbody td .waiting-bar h4 {
     color: #A3A7AB;
 }
 
@@ -584,7 +592,10 @@
 .section-wrap .personal-content .edit-info-btn img {
     margin: 0 12px 0 0;
 }
-
+.responsive-table thead th:nth-child(7), .responsive-table tbody td[data-title=Actions],
+.responsive-table tbody td[data-title="Actions"] div p {
+    text-align: center;
+}
 /* Medias */
 @media (max-width: 1800px) {
 
@@ -636,21 +647,25 @@
     }
 
     .responsive-table tbody td[data-title="Assets-To-Protect Form"] img,
+    .responsive-table tbody td[data-title="Initial Consultation"] img,
     .responsive-table tbody td[data-title="Irrevocable Trust Form"] img,
     .responsive-table tbody td[data-title="Trust And Corporate Docs"] img {
         margin: 0 5px 0 0;
     }
 
     .responsive-table tbody td[data-title="Assets-To-Protect Form"] p,
+    .responsive-table tbody td[data-title="Initial Consultation"] p,
     .responsive-table tbody td[data-title="Irrevocable Trust Form"] p,
     .responsive-table tbody td[data-title="Trust And Corporate Docs"] p,
     .responsive-table tbody td[data-title="Assets-To-Protect Form"] h4,
+    .responsive-table tbody td[data-title="Initial Consultation"] h4,
     .responsive-table tbody td[data-title="Irrevocable Trust Form"] h4,
     .responsive-table tbody td[data-title="Trust And Corporate Docs"] h4 {
         font-size: 12px;
     }
 
     .responsive-table tbody td[data-title="Assets-To-Protect Form"] img,
+    .responsive-table tbody td[data-title="Initial Consultation"] img,
     .responsive-table tbody td[data-title="Irrevocable Trust Form"] img,
     .responsive-table tbody td[data-title="Trust And Corporate Docs"] img {
         width: 20px;
@@ -670,6 +685,7 @@
         margin: 0;
     }
     .responsive-table tbody td[data-title="Assets-To-Protect Form"] > div,
+    .responsive-table tbody td[data-title="Initial Consultation"] > div,
     .responsive-table tbody td[data-title="Irrevocable Trust Form"] > div,
     .responsive-table tbody td[data-title="Trust And Corporate Docs"] > div {
         display: flex;
@@ -692,6 +708,7 @@
     .responsive-table tbody td[data-title="Actions"] > div {
         display: flex;
         justify-content: flex-end;
+        align-items: center;
     }
 
     .responsive-table tbody td[data-title="Actions"] div img {

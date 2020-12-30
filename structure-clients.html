@@ -30,9 +30,12 @@
             <div class="logo-bar">
                 <img src="images/Fortune-logo.png" alt="Logo" title="Logo">
             </div>
-            <div class="switch-button"><span class="active"></span>
-                <button class="switch-button-case left active-case" id="structures-btn">Structures</button>
-                <button class="switch-button-case right">Insurance</button>
+            <div class="switch-button">
+                <span class="active"></span>
+                <button data-show=".structure-wrap" class="switch-button-case left active-case" id="structures-btn">
+                    Structures
+                </button>
+                <button data-show=".insurance-wrap" class="switch-button-case right">Insurance</button>
             </div>
             <div class="menu-items-bar">
                 <div>
@@ -48,13 +51,13 @@
                        </span>
                         <span class="name-bar">Clients</span>
                     </a>
-                    <a href="structure-invite-new-clients.html">
+                    <a href="structure-add-new-clients.html">
                        <span class="icon-bar">
                            <img src="images/icons/Invite-New-Clients-icon.svg"
                                 alt="Invite New Clients-icon Icon"
                                 title="Invite-New-Clients-icon">
                        </span>
-                        <span class="name-bar">invite new clients</span>
+                        <span class="name-bar">add new clients</span>
                     </a>
                     <a href="structure-my-account.html">
                        <span class="icon-bar">
@@ -62,7 +65,7 @@
                        </span>
                         <span class="name-bar">My Account</span>
                     </a>
-                    <a href="#">
+                    <a href="structure-settings.html">
                        <span class="icon-bar">
                            <img src="images/icons/Settings-icon.svg" alt="Settings Icon" title="Settings">
                        </span>
@@ -94,7 +97,7 @@
         <!-- /header  -->
 
         <section>
-            <div class="section-wrap">
+            <div  class="structure-wrap section-wrap">
                 <div class="packages-switch-btns-bar">
                     <button class="package-item active-package" data-show=".platinum-package-tbl">
                         <span class="package-num">32</span>
@@ -2702,7 +2705,9 @@
                 </div>
 
             </div>
+            <div  class="insurance-wrap section-wrap hide">
 
+            </div>
         </section>
 
         <!--  /Section  -->

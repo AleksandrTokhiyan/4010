@@ -54,13 +54,36 @@
             opacity: 1;
         }
 
+        .val_answer-body {
+            color: #fff;
+            padding: 30px;
+            margin-top: 30px;
+            height: 300px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        label {
+            margin-right: 20px;
+        }
+        .val_yes{
+            border:1px solid blue;
+        }
+        .val_no{
+            border:1px solid red;
+            display: none;
+        }
     </style>
 </head>
 <body>
 <div class="custom-radios">
     <div>
-        <input type="radio" id="planningToSell_yes" name="planningToSell" value="planningToSell_yes" checked>
-        <label for="planningToSell_yes">
+        <input type="radio" class="val_answer" id="val_yes" name="val_answer" value="val_yes" checked>
+        <label for="val_yes">
             <span>
               <img src="../images/icons/radio-btn-check.svg" alt="Checked Icon" />
             </span>
@@ -69,8 +92,8 @@
     </div>
 
     <div>
-        <input type="radio" id="planningToSell_no" name="planningToSell" value="planningToSell_no">
-        <label for="planningToSell_no">
+        <input type="radio" class="val_answer" id="val_no" name="val_answer" value="val_no">
+        <label for="val_no">
             <span>
               <img src="../images/icons/radio-btn-check.svg" alt="Checked Icon" />
             </span>
@@ -78,5 +101,20 @@
         </label>
     </div>
 </div>
+<div>
+    <div class="val_yes val_answer-body"></div>
+    <div class="val_no val_answer-body hide"></div>
+</div>
+<script src="../lib/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.val_answer').on("click",function () {
+            let inputValue = $(this).attr("value");
+            let targetBox = $("." + inputValue);
+            $(".val_answer-body").not(targetBox).hide();
+            $(targetBox).show();
+        });
+    });
+</script>
 </body>
 </html>

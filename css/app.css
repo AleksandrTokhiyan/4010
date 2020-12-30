@@ -1,10 +1,12 @@
 /* App */
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    margin: 0;
+    background-color: #F5F5F5;
+    margin: 0
 }
 
 button, input, textarea, label {

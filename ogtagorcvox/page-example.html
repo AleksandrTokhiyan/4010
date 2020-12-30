@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Structure/Clients</title>
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/clients.css">
-    <link rel="stylesheet" href="../css/app.css">
+<!--    <link rel="stylesheet" href="../css/clients.css">-->
+<!--    <link rel="stylesheet" href="../css/app.css">-->
     <style>
 
     </style>
@@ -105,10 +105,22 @@
 <script>
 
 </script>
-<script src="../js/switch-buttons.js"></script>
-<script src="../lib/js/jquery-3.3.1.min.js"></script>
-<script src="../js/script.js"></script>
+<!--<script src="../js/switch-buttons.js"></script>-->
+<!--<script src="../lib/js/jquery-3.3.1.min.js"></script>-->
+<!--<script src="../js/script.js"></script>-->
 <script>
+    /*  Media Menu toggle  */
+
+    let menuToggler = document.getElementById('menuToggler');
+    let menuTogglerLabel = document.getElementById('menuTogglerLabel');
+
+    menuToggler.addEventListener('change', function () {
+        if (menuToggler.checked) {
+            menuTogglerLabel.setAttribute('aria-pressed', 'true');
+        } else {
+            menuTogglerLabel.setAttribute('aria-pressed', 'false');
+        }
+    });
 
 </script>
 </body>

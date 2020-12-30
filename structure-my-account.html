@@ -13,7 +13,6 @@
     <style>
 
     </style>
-
 </head>
 <body>
 
@@ -49,13 +48,13 @@
                        </span>
                         <span class="name-bar">Clients</span>
                     </a>
-                    <a href="structure-invite-new-clients.html">
+                    <a href="structure-add-new-clients.html">
                        <span class="icon-bar">
                            <img src="images/icons/Invite-New-Clients-icon.svg"
                                 alt="Invite New Clients-icon Icon"
                                 title="Invite-New-Clients-icon">
                        </span>
-                        <span class="name-bar">invite new clients</span>
+                        <span class="name-bar">add new clients</span>
                     </a>
                     <a href="structure-my-account.html" class="active-menu-item">
                        <span class="icon-bar">
@@ -63,7 +62,7 @@
                        </span>
                         <span class="name-bar">My Account</span>
                     </a>
-                    <a href="#">
+                    <a href="structure-settings.html">
                        <span class="icon-bar">
                            <img src="images/icons/Settings-icon.svg" alt="Settings Icon" title="Settings">
                        </span>
@@ -160,17 +159,22 @@
                 </div>
                 <div>
                     <h3>Credit Card information</h3>
-                    <div class="credit-card-banner">
-                        <button class="card-item active-card">
-                            <img src="images/visa.png" alt="VISA" title="VISA">
-                        </button>
-                        <button class="card-item">
-                            <img src="images/masterCard.png" alt="MasterCard" title="MasterCard">
-                        </button>
-                        <button class="card-item">
-                            <img src="images/discover.png" alt="DISCOVER" title="DISCOVER">
-                        </button>
-                    </div>
+                    <form action="#" method="post">
+                        <div class="credit-card-banner">
+                            <label class="card-item active-card">
+                                <img src="images/visa.png" alt="VISA" title="VISA">
+                                <input type="radio" name="card" value="v-1" placeholder="" checked>
+                            </label>
+                            <label class="card-item">
+                                <img src="images/masterCard.png" alt="MasterCard" title="MasterCard">
+                                <input type="radio" name="card" value="v-2" placeholder="">
+                            </label>
+                            <label class="card-item">
+                                <img src="images/discover.png" alt="DISCOVER" title="DISCOVER">
+                                <input type="radio" name="card" value="v-3" placeholder="">
+                            </label>
+                        </div>
+                    </form>
                     <div class="form-group">
                         <label for="credit_card_number">Credit Card Number</label>
                         <input type="number" placeholder="**** **** **** ****" id="credit_card_number">
@@ -221,12 +225,5 @@
 <script src="js/select.js"></script>
 <script src="js/switch-buttons.js"></script>
 <script src="js/script.js"></script>
-<script>
-
-
-</script>
-<script>
-
-</script>
 </body>
 </html>

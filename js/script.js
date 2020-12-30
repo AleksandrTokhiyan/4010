@@ -1,11 +1,3 @@
-// Scrolling on click
-function scrollingTbl(x, y) {
-    document.getElementById("platinum_package_body").scrollBy(x, y);
-    document.getElementById("gold_package_body").scrollBy(x, y);
-    document.getElementById("silver_package_body").scrollBy(x, y);
-    document.getElementById("bronze_package_body").scrollBy(x, y);
-}
-
 $(document).on('click', '.package-item', function () {
     let show = $(this).data('show');
     let c = $(this);
@@ -58,4 +50,49 @@ $(document).on('click', '.card-item', function () {
 $(document).on("click", ".change-pass-btn", function () {
     $(this).hide();
     $(".pass-group").removeClass("hide-form-group");
+});
+
+
+/* Settings Switch Buttons */
+
+$(document).on('click', '.setting-btn-item', function () {
+    let show = $(this).data('show');
+    let c = $(this);
+
+    $(show).removeClass("hide").siblings().addClass("hide");
+    $(c).removeClass("hide").addClass("active-setting").siblings().removeClass("active-setting");
+
+});
+
+
+
+/* Structure , Insurance (Switch) */
+
+$(document).on('click', '.switch-button-case', function () {
+    let show = $(this).data('show');
+    let c = $(this);
+
+    $(show).removeClass("hide").siblings().addClass("hide");
+    $(c).removeClass("hide").addClass("active-case").siblings().removeClass("active-case");
+
+});
+
+
+$(document).on('click', '.card-item', function () {
+    let c = $(this);
+    $(c).addClass("active-card").siblings().removeClass("active-card");
+});
+
+$(document).on('click', '.type_of_case-option', function () {
+    let show = $(this).data('show');
+    $(show).removeClass("hide").siblings().addClass("hide");
+});
+
+$(document).ready(function () {
+    $('.val_answer').on("click", function () {
+        let inputValue = $(this).attr("value");
+        let targetBox = $("." + inputValue);
+        $(this).closest(".question-item").find(".val_answer-body").not(targetBox).hide();
+        $(targetBox).show();
+    });
 });
