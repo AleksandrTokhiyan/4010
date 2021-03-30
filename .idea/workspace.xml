@@ -1,9 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d06d2ec0-3f85-4b47-9f84-ab2a6b8282bc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/structure-add-new-clients.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/structure-clients.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,54 +40,6 @@
         <option value="HTML File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>pers</find>
-      <find>.question-item</find>
-      <find>client_date_birth</find>
-      <find>.type_of_case-body-item .val_answer-body</find>
-      <find>quest-1</find>
-      <find>val-2</find>
-      <find>.val-2</find>
-      <find>select</find>
-      <find>desc-info</find>
-      <find>client_gender</find>
-      <find>consult-has-been-done-checkbox</find>
-      <find>consultation-date</find>
-      <find>igic-consultation-date</find>
-      <find>select_rason</find>
-      <find>quest-2</find>
-      <find>igic-val_yes-1-sel-date</find>
-      <find>.responsive-table tbody td[data-title=&quot;Actions&quot;] &gt; div</find>
-      <find>.for-information .credit-card-banner</find>
-      <find>.for-information .credit-card-banner .card-item</find>
-      <find>.wrapper-body header</find>
-      <find>credit-card-banner</find>
-      <find>igic</find>
-      <find>checkBox-btn-styles</find>
-      <find>card-item</find>
-      <find>.navigation-bar .menu-items-bar a .name-bar</find>
-      <find>inv</find>
-      <find>0 0 3px red</find>
-      <find>invite new clients</find>
-      <find>1px solid green</find>
-      <find>exp</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>Initial Consultation</replace>
-      <replace>&lt;img src=&quot;images/4010/icons/arrow-pages-icon.svg&quot;</replace>
-      <replace>Done</replace>
-      <replace>quest-2</replace>
-      <replace>client-igic_gender</replace>
-      <replace>client-golden_gender</replace>
-      <replace>consult-igic-has-been-done-checkbox</replace>
-      <replace>consult-golden-has-been-done-checkbox</replace>
-      <replace>igic-consultation-date</replace>
-      <replace>golden-consultation-date</replace>
-      <replace>golden</replace>
-      <replace>opm</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -131,7 +100,7 @@
       <workItem from="1609225177745" duration="7371000" />
       <workItem from="1609235834997" duration="39394000" />
       <workItem from="1616660822629" duration="721000" />
-      <workItem from="1617111335631" duration="357000" />
+      <workItem from="1617111335631" duration="881000" />
     </task>
     <servers />
   </component>
@@ -148,5 +117,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1617112221806">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1617112221806" />
   </component>
 </project>
