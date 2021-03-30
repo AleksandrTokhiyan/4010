@@ -1177,6 +1177,7 @@ input:checked + label[for=consult-golden-has-been-done-checkbox] .checkbox polyl
     display: flex;
     flex-wrap: wrap;
 }
+
 /* /Settings Styles */
 @media (max-width: 1800px) {
     .wrapper-body header {
@@ -1198,7 +1199,7 @@ input:checked + label[for=consult-golden-has-been-done-checkbox] .checkbox polyl
 
 @media (max-width: 1400px) {
     .wrapper-body section .packages-switch-btns-bar .package-item {
-        width: 200px;
+        width: 23.3%;
         margin: 0 15px 0 0;
     }
 
