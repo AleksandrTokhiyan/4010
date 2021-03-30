@@ -1,0 +1,2350 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Structure/Add New Clients</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-face.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/app.css">
+    <style>
+
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <input type="checkbox" id="menuToggler" class="input-toggler" value="1" autofocus="true"/>
+    <label for="menuToggler" id="menuTogglerLabel" class="menu-toggler" role="button" aria-pressed="false"
+           aria-expanded="false" aria-label="Navigation button">
+        <span class="menu-toggler__line"></span>
+        <span class="menu-toggler__line"></span>
+        <span class="menu-toggler__line"></span>
+    </label>
+    <div id="sidebar" role="navigation" aria-labelledby="menuTogglerLabel" aria-hidden="true"
+         class=" sidebar">
+        <div class="navigation-bar">
+            <div class="logo-bar">
+                <img src="images/Fortune-logo.png" alt="Logo" title="Logo">
+            </div>
+            <div class="switch-button"><span class="active"></span>
+                <button data-show=".structure-wrap" class="switch-button-case left active-case" id="structures-btn">
+                    Structures
+                </button>
+                <button data-show=".insurance-wrap" class="switch-button-case right">Insurance</button>
+            </div>
+            <div class="menu-items-bar">
+                <div>
+                    <a href="structure-dashboard.html">
+                       <span class="icon-bar">
+                           <img src="images/icons/Dashboard-icon.svg" alt="Dashboard Icon" title="Dashboard">
+                       </span>
+                        <span class="name-bar">Dashboard</span>
+                    </a>
+                    <a href="structure-clients.html">
+                       <span class="icon-bar">
+                           <img src="images/icons/Clients-icon.svg" alt="Clients Icon" title="Clients">
+                       </span>
+                        <span class="name-bar">Clients</span>
+                    </a>
+                    <a href="structure-add-new-clients.html" class="active-menu-item">
+                       <span class="icon-bar">
+                           <img src="images/icons/Invite-New-Clients-icon.svg"
+                                alt="Add New Clients-icon Icon"
+                                title="Add-New-Clients-icon">
+                       </span>
+                        <span class="name-bar">Add new clients</span>
+                    </a>
+                    <a href="structure-my-account.html">
+                       <span class="icon-bar">
+                           <img src="images/icons/My-Account-icon.svg" alt="My Account Icon" title="My Account">
+                       </span>
+                        <span class="name-bar">My Account</span>
+                    </a>
+                    <a href="structure-settings.html">
+                       <span class="icon-bar">
+                           <img src="images/icons/Settings-icon.svg" alt="Settings Icon" title="Settings">
+                       </span>
+                        <span class="name-bar">Settings</span>
+                    </a>
+                </div>
+                <a href="#" id="logoutItem">
+                       <span class="icon-bar">
+                           <img src="images/icons/Logout-icon.svg" alt="Logout Icon" title="Logout">
+                       </span>
+                    <span class="name-bar">Logout</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper-body">
+        <header>
+            <nav>
+                <div class="page_name">
+                    <h1>Invite New Clients</h1>
+                </div>
+                <div class="user_avatar_bar">
+                    <h3 class="user-name">James Smith</h3>
+                    <img src="images/James-Smith-avatar.png" class="user-avatar" alt="User Avatar"
+                         title="User Avatar">
+                </div>
+            </nav>
+        </header>
+        <!-- /header  -->
+
+        <section>
+            <div  class="structure-wrap section-wrap for-information ">
+                <div>
+                    <div class="select-content select-package">
+                        <label for="select_package">Select package</label>
+                        <select name="select_package" id="select_package" class="custom-select sources"
+                                placeholder="Select package">
+                            <option value="val-1">Value 1</option>
+                            <option value="val-2">Value 2</option>
+                            <option value="val-3">Value 3</option>
+                        </select>
+                    </div>
+                    <div class="form-group event-name-group">
+                        <label for="event_name">Event name</label>
+                        <input type="text" placeholder="Event name" id="event_name">
+                    </div>
+                </div>
+                <div>
+                    <h3>personal information</h3>
+                    <div class="form-group">
+                        <label for="first_name">First name</label>
+                        <input type="text" placeholder="First Name" id="first_name">
+                    </div>
+                    <div class="form-group">
+                        <label for="last_name">Last name</label>
+                        <input type="text" placeholder="Last name" id="last_name">
+                    </div>
+                    <div class="form-group email-address-group">
+                        <label for="email_address">Email address</label>
+                        <input type="email" placeholder="Email address" id="email_address">
+                    </div>
+                    <div class="form-group phone-number-group">
+                        <label for="phone_number">Phone number</label>
+                        <input type="number" placeholder="Phone number" id="phone_number">
+                    </div>
+                </div>
+                <div>
+                    <h3>Billing address</h3>
+                    <div class="select-content">
+                        <label for="country">Country</label>
+                        <select name="country" id="country" class="custom-select sources"
+                                placeholder="Country">
+                            <option value="val-1">Value 1</option>
+                            <option value="val-2">Value 2</option>
+                            <option value="val-3">Value 3</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="state">State</label>
+                        <input type="text" placeholder="State" id="state">
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" placeholder="City" id="city">
+                    </div>
+                    <div class="form-group">
+                        <label for="zip_code">Zip Code</label>
+                        <input type="text" placeholder="***" id="zip_code">
+                    </div>
+                    <div class="form-group address-group">
+                        <label for="address">Address</label>
+                        <input type="text" placeholder="Address" id="address">
+                    </div>
+                </div>
+                <div>
+                    <h3>Credit Card information</h3>
+                    <div class="credit-card-banner">
+                        <button class="card-item active-card">
+                            <img src="images/visa.png" alt="VISA" title="VISA">
+                        </button>
+                        <button class="card-item">
+                            <img src="images/masterCard.png" alt="MasterCard" title="MasterCard">
+                        </button>
+                        <button class="card-item">
+                            <img src="images/discover.png" alt="DISCOVER" title="DISCOVER">
+                        </button>
+                    </div>
+                    <div class="form-group">
+                        <label for="credit_card_number">Credit Card Number</label>
+                        <input type="number" placeholder="**** **** **** ****" id="credit_card_number">
+                    </div>
+                    <div class="form-group">
+                        <label for="card_holder_name">Card Holder Name</label>
+                        <input type="text" placeholder="Card Holder Name" id="card_holder_name">
+                    </div>
+                    <div class="form-group cvv-group">
+                        <label for="cvv">CVV</label>
+                        <input type="number" placeholder="***" id="cvv">
+                    </div>
+                    <div class="form-group expiry-group">
+                        <div class="select-content">
+                            <label for="expiry_month">Expiry Month</label>
+                            <select name="expiry_month" id="expiry_month" class="custom-select sources"
+                                    placeholder="**">
+                                <option value="val-1">Value 1</option>
+                                <option value="val-2">Value 2</option>
+                                <option value="val-3">Value 3</option>
+                            </select>
+                        </div>
+                        <div class="select-content">
+                            <label for="expiry_year">Expiry Year</label>
+                            <select name="expiry_year" id="expiry_year" class="custom-select sources"
+                                    placeholder="**">
+                                <option value="val-1">Value 1</option>
+                                <option value="val-2">Value 2</option>
+                                <option value="val-3">Value 3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons_bar">
+                    <button class="light-btn-style">Cancel</button>
+                    <button class="site-btn-style">Add Client</button>
+                </div>
+            </div>
+            <div  class="insurance-wrap section-wrap hide">
+                <div class="select-content select-package">
+                    <label for="Type_of_Case">Type of Case</label>
+                    <div class="custom-select-wrapper">
+                        <select name="Type_of_Case" id="Type_of_Case" class="custom-select sources"
+                                placeholder="Select Type of Case">
+                            <option value="igic" class="type_of_case-option">IGIC</option>
+                            <option value="golden" class="type_of_case-option">GOLDEN</option>
+                            <option value="opm" class="type_of_case-option">OPM</option>
+                            <option value="roll_igic" class="type_of_case-option">Rollover + IGIC</option>
+                            <option value="roll_igic-debt" class="type_of_case-option">Rollover + IGIC + Debt</option>
+                            <option value="roll_igic-opm" class="type_of_case-option">Rollover + IGIC + OPM</option>
+
+                        </select>
+                    </div>
+                </div>
+
+                <div class="Type_of_Case-body">
+                    <div class="igic type_of_case-body-item hide">
+                        <p class="desc-info">
+                            Commission rates for this case: James Smith, 80%; Angela Malis (Z14-6843C), 10%; Zach
+                            Parry
+                            (Z14-1402D), 10%.
+                        </p>
+                        <div class="for-information">
+                            <div>
+                                <h3>
+                                    Client Information
+                                </h3>
+                                <div class="form-group">
+                                    <label for="client-igic_f_name">First name</label>
+                                    <input type="text" placeholder="First Name" id="client-igic_f_name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-igic_l_name">Last name</label>
+                                    <input type="text" placeholder="Last name" id="client-igic_l_name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-igic_e_address">Email address</label>
+                                    <input type="email" placeholder="Email address" id="client-igic_e_address">
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-igic_p_number">Phone number</label>
+                                    <input type="number" placeholder="Phone number" id="client-igic_p_number">
+                                </div>
+                                <div class="form-group ">
+                                    <label for="client-igic_date_birth">Date <span class="lowercase">of</span>
+                                        Birth</label>
+                                    <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                           id="client-igic_date_birth">
+
+                                </div>
+                                <div class="select-content">
+                                    <label for="client-igic_gender">Gender</label>
+                                    <div class="custom-select-wrapper">
+                                        <select name="client-igic_gender" id="client-igic_gender"
+                                                class="custom-select sources"
+                                                placeholder="Select gender">
+                                            <option value="val-male">Male</option>
+                                            <option value="val-female">Female</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkBox-btn-styles">
+                            <div class="form-check">
+                                <input type="checkbox" id="consult-igic-has-been-done-checkbox">
+                                <label for="consult-igic-has-been-done-checkbox">
+                                                        <span>
+                                                            <svg class="checkbox" viewBox="0 0 40 40">
+                                                                <defs>
+                                                                    <linearGradient id="gradient" x1="0" y1="0" x2="1"
+                                                                                    y2="1">
+                                                                        <stop offset="0%" stop-color="#459290"></stop>
+                                                                        <stop offset="100%" stop-color="#459290"></stop>
+                                                                    </linearGradient>
+                                                                </defs>
+                                                                <rect x="2" y="2" width="36" height="36"></rect>
+                                                                <rect id="colors" x="2" y="2" width="36"
+                                                                      height="36"></rect>
+                                                                <polyline points="9,22 18,30 32,9"></polyline>
+                                                            </svg>
+                                                        </span>
+                                    <span>
+                                                            The initial consultation has been done.
+                                                        </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="for-information">
+                            <div>
+                                <div class="form-group">
+                                    <label for="igic-consultation-date">consultation Date</label>
+                                    <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                           id="igic-consultation-date">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="case-content during_consultation">
+                            <h4 class="cont-name">During your initial consultation, did you gather all of the
+                                following
+                                information about client</h4>
+                            <div>
+                                <a href="#">Existing insurance?</a>
+                                <a href="#">Biographical information about a spouse, if any?</a>
+                                <a href="#">Investments?</a>
+                                <a href="#">Qualified accounts?</a>
+                                <a href="#">Are you confident that the IGIC is the best option for the client?</a>
+                            </div>
+                        </div>
+                        <!--***************************************************************************************-->
+                        <div class="case-content question-item quest-1">
+                            <h4 class="cont-name">
+                                Have you set up a follow-up appointment for an illustration review?
+                            </h4>
+                            <div class="custom-radios">
+                                <div>
+                                    <input type="radio" class="val_answer" id="igic-val_yes-1" name="igic-val_answer-1"
+                                           value="igic-val_yes-1" checked>
+                                    <label for="igic-val_yes-1">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        Yes
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" class="val_answer" id="igic-val_no-1" name="igic-val_answer-1"
+                                           value="igic-val_no-1">
+                                    <label for="igic-val_no-1">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="igic-val_yes-1 val_answer-body">
+                                    <div class="for-information">
+                                        <div>
+                                            <div class="form-group">
+                                                <label for="igic-val_yes-1-sel-date">Select Date</label>
+                                                <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                                       id="igic-val_yes-1-sel-date">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="igic-val_yes-1-sel-time">Select Time</label>
+                                                <input type="time" value="12:00" id="igic-val_yes-1-sel-time">
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="igic-val_no-1 val_answer-body">
+                                    <a href="#">Please set up a follow up appointment and then come back and enter it
+                                        into the system.</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--***************************************************************************************-->
+                        <div class="case-content question-item">
+                            <h4 class="cont-name">
+                                Have you requested an illustration?
+                            </h4>
+                            <div class="custom-radios">
+                                <div>
+                                    <input type="radio" class="val_answer" id="igic-val_yes-2" name="igic-val_answer-2"
+                                           value="igic-val_yes-2" checked>
+                                    <label for="igic-val_yes-2">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        Yes
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" class="val_answer" id="igic-val_no-2" name="igic-val_answer-2"
+                                           value="igic-val_no-2">
+                                    <label for="igic-val_no-2">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="igic-val_yes-2 val_answer-body">
+                                    <div class="for-information">
+                                        <div>
+                                            <div class="form-group">
+                                                <label for="igic-val_yes-2-sel-date">Select Date</label>
+                                                <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                                       id="igic-val_yes-2-sel-date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="igic-val_no-2 val_answer-body">
+                                    <a href="#">Please request an illustration and then come back and mark that it has
+                                        been requested.</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--***************************************************************************************-->
+                        <div class="case-content question-item">
+                            <h4 class="cont-name">
+                                Were you able to conduct the illustration-review appointment with client?
+                            </h4>
+                            <div class="custom-radios">
+                                <div>
+                                    <input type="radio" class="val_answer" id="igic-val_yes-3" name="igic-val_answer-3"
+                                           value="igic-val_yes-3" checked>
+                                    <label for="igic-val_yes-3">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        Yes
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" class="val_answer" id="igic-val_no-3" name="igic-val_answer-3"
+                                           value="igic-val_no-3">
+                                    <label for="igic-val_no-3">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="igic-val_yes-3 val_answer-body">
+                                    <div class="for-information">
+                                        <div>
+                                            <div class="form-group">
+                                                <label for="igic-val_yes-3-sel-date">Select Date</label>
+                                                <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                                       id="igic-val_yes-3-sel-date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="igic-val_no-3 val_answer-body">
+                                    <div class="for-information">
+                                        <div>
+                                            <div class="select-content">
+                                                <label for="igic-select_rason">Select The rason</label>
+                                                <select name="igic-select_rason" id="igic-select_rason"
+                                                        class="custom-select sources"
+                                                        placeholder="Client rescheduled">
+                                                    <option value="val-1">Value 1</option>
+                                                    <option value="val-2">Value 2</option>
+                                                    <option value="val-3">Value 3</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="igic-val_no-3-sel-date">Select Date</label>
+                                                <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                                       id="igic-val_no-3-sel-date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--***************************************************************************************-->
+                        <div class="case-content question-item">
+                            <h4 class="cont-name">
+                                Has the policy been delivered to the client?
+                            </h4>
+                            <div class="custom-radios">
+                                <div>
+                                    <input type="radio" class="val_answer" id="igic-val_yes-4" name="igic-val_answer-4"
+                                           value="igic-val_yes-4" checked>
+                                    <label for="igic-val_yes-4">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        Yes
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" class="val_answer" id="igic-val_no-4" name="igic-val_answer-4"
+                                           value="igic-val_no-4">
+                                    <label for="igic-val_no-4">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="igic-val_yes-4 val_answer-body">
+                                    <div class="for-information">
+                                        <div>
+                                            <div class="form-group">
+                                                <label for="igic-val_yes-4-sel-date">Select Date</label>
+                                                <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                                       id="igic-val_yes-4-sel-date">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="igic-val_no-4 val_answer-body">
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--***************************************************************************************-->
+                        <div class="for-information">
+                            <div class="buttons_bar">
+                                <button class="light-btn-style">Cancel</button>
+                                <button type="submit" class="site-btn-style">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="golden type_of_case-body-item hide">
+                        <p class="desc-info">
+                            Commission rates for this case: James Smith, 75%; Angela Malis (Z14-6843C), 12/13%; Zach
+                            Parry (Z14-1402D), 13/12%. (Note: because you can only enter whole numbers, for the Fortune
+                            Law Firm’s 25%, you will need to enter 12% for either Zach or Angela and 13% for the other.
+                            Please alternate these numbers between cases.)
+                            <span>
+                                Please remember to request the .csv illustration with your illustration request.
+                                Once you have the illustration and the .csv file, please send them to Zach Parry
+                                at zach@fortunefirm.com.
+                            </span>
+                        </p>
+                        <div class="for-information">
+                            <div>
+                                <h3>
+                                    Client Information
+                                </h3>
+                                <div class="form-group">
+                                    <label for="client-golden_f_name">First name</label>
+                                    <input type="text" placeholder="First Name" id="client-golden_f_name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-golden_l_name">Last name</label>
+                                    <input type="text" placeholder="Last name" id="client-golden_l_name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-golden_e_address">Email address</label>
+                                    <input type="email" placeholder="Email address" id="client-golden_e_address">
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-golden_p_number">Phone number</label>
+                                    <input type="number" placeholder="Phone number" id="client-golden_p_number">
+                                </div>
+                                <div class="form-group ">
+                                    <label for="client-golden_date_birth">Date <span class="lowercase">of</span>
+                                        Birth</label>
+                                    <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                           id="client-golden_date_birth">
+
+                                </div>
+                                <div class="select-content">
+                                    <label for="client-golden_gender">Gender</label>
+                                    <div class="custom-select-wrapper">
+                                        <select name="client-golden_gender" id="client-golden_gender"
+                                                class="custom-select sources"
+                                                placeholder="Select gender">
+                                            <option value="val-male">Male</option>
+                                            <option value="val-female">Female</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkBox-btn-styles">
+                            <div class="form-check">
+                                <input type="checkbox" id="consult-golden-has-been-done-checkbox">
+                                <label for="consult-golden-has-been-done-checkbox">
+                                    <span>
+                                        <svg class="checkbox" viewBox="0 0 40 40">
+                                            <defs>
+                                                <linearGradient id="gradient" x1="0" y1="0" x2="1" y2="1">
+                                                    <stop offset="0%" stop-color="#459290"></stop>
+                                                    <stop offset="100%" stop-color="#459290"></stop>
+                                                </linearGradient>
+                                            </defs>
+                                            <rect x="2" y="2" width="36" height="36"></rect>
+                                            <rect id="colors" x="2" y="2" width="36" height="36"></rect>
+                                            <polyline points="9,22 18,30 32,9"></polyline>
+                                        </svg>
+                                    </span>
+                                    <span>
+                                        The initial consultation has been done.
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="for-information">
+                            <div>
+                                <div class="form-group">
+                                    <label for="golden-consultation-date">consultation Date</label>
+                                    <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                           id="golden-consultation-date">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="case-content during_consultation">
+                            <h4 class="cont-name">During your initial consultation, did you gather all of the
+                                following
+                                information about client</h4>
+                            <div>
+                                <a href="#">Existing insurance?</a>
+                                <a href="#">Biographical information about a spouse, if any?</a>
+                                <a href="#">Investments?</a>
+                                <a href="#">Qualified accounts?</a>
+                                <a href="#">Are you confident that the IGIC is the best option for the client?</a>
+                            </div>
+                        </div>
+                        <!--***************************************************************************************-->
+                        <div class="case-content question-item">
+                            <h4 class="cont-name">
+                                Has the debt-sheet form been submitted?
+                            </h4>
+                            <div class="custom-radios">
+                                <div>
+                                    <input type="radio" class="val_answer" id="golden-val_yes-1"
+                                           name="golden-val_answer-1"
+                                           value="golden-val_yes-1" checked>
+                                    <label for="golden-val_yes-1">
+                                    <span>
+                                        <img src="images/icons/radio-btn-check.svg" alt="Checked Icon"/>
+                                    </span>
+                                        Yes
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" class="val_answer" id="golden-val_no-1"
+                                           name="golden-val_answer-1"
+                                           value="golden-val_no-1">
+                                    <label for="golden-val_no-1">
+                                    <span>
+                                        <img src="images/icons/radio-btn-check.svg" alt="Checked Icon"/>
+                                    </span>
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="golden-val_yes-1 val_answer-body">
+                                    <div class="for-information">
+                                        <div>
+                                            <div class="form-group">
+                                                <label for="golden-val_yes-1-sel-date">Select Date</label>
+                                                <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                                       id="golden-val_yes-1-sel-date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="golden-val_no-1 val_answer-body">
+                                    <a href="#">Please submit the debt-sheet form at fortunefirm.com/debt-sheet and then
+                                        come back and enter it into the system.</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--***************************************************************************************-->
+                        <div class="case-content question-item quest-2">
+                            <h4 class="cont-name">
+                                Have you set up a follow-up appointment for an illustration review?
+                            </h4>
+                            <div class="custom-radios">
+                                <div>
+                                    <input type="radio" class="val_answer" id="golden-val_yes-2"
+                                           name="golden-val_answer-2"
+                                           value="golden-val_yes-2" checked>
+                                    <label for="golden-val_yes-2">
+                                    <span>
+                                        <img src="images/icons/radio-btn-check.svg" alt="Checked Icon"/>
+                                    </span>
+                                        Yes
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" class="val_answer" id="golden-val_no-2"
+                                           name="golden-val_answer-2"
+                                           value="golden-val_no-2">
+                                    <label for="golden-val_no-2">
+                                    <span>
+                                        <img src="images/icons/radio-btn-check.svg" alt="Checked Icon"/>
+                                    </span>
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="golden-val_yes-2 val_answer-body">
+                                    <div class="for-information">
+                                        <div>
+                                            <div class="form-group">
+                                                <label for="golden-val_yes-2-sel-date">Select Date</label>
+                                                <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                                       id="golden-val_yes-2-sel-date">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="golden-val_yes-2-sel-time">Select Time</label>
+                                                <input type="time" value="12:00" id="golden-val_yes-2-sel-time">
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="golden-val_no-2 val_answer-body">
+                                    <a href="#">Please set up a follow up appointment and then come back and enter it
+                                        into the system.</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--***************************************************************************************-->
+                        <div class="case-content question-item">
+                            <h4 class="cont-name">
+                                Have you requested an illustration?
+                            </h4>
+                            <div class="custom-radios">
+                                <div>
+                                    <input type="radio" class="val_answer" id="golden-val_yes-3"
+                                           name="golden-val_answer-3"
+                                           value="golden-val_yes-3" checked>
+                                    <label for="golden-val_yes-3">
+                                    <span>
+                                        <img src="images/icons/radio-btn-check.svg" alt="Checked Icon"/>
+                                    </span>
+                                        Yes
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" class="val_answer" id="golden-val_no-3"
+                                           name="golden-val_answer-3"
+                                           value="golden-val_no-3">
+                                    <label for="golden-val_no-3">
+                                    <span>
+                                        <img src="images/icons/radio-btn-check.svg" alt="Checked Icon"/>
+                                    </span>
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="golden-val_yes-3 val_answer-body">
+                                    <div class="for-information">
+                                        <div>
+                                            <div class="form-group">
+                                                <label for="golden-val_yes-3-sel-date">Select Date</label>
+                                                <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                                       id="golden-val_yes-3-sel-date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="golden-val_no-3 val_answer-body">
+                                    <a href="#">Please request an illustration and then come back and mark that it has
+                                        been requested.</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--***************************************************************************************-->
+                        <div class="case-content question-item">
+                            <h4 class="cont-name">
+                                Were you able to conduct the illustration-review appointment with client?
+                            </h4>
+                            <div class="custom-radios">
+                                <div>
+                                    <input type="radio" class="val_answer" id="golden-val_yes-4"
+                                           name="golden-val_answer-4"
+                                           value="golden-val_yes-4" checked>
+                                    <label for="golden-val_yes-4">
+                                    <span>
+                                        <img src="images/icons/radio-btn-check.svg" alt="Checked Icon"/>
+                                    </span>
+                                        Yes
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" class="val_answer" id="golden-val_no-4"
+                                           name="golden-val_answer-4"
+                                           value="golden-val_no-4">
+                                    <label for="golden-val_no-4">
+                                    <span>
+                                        <img src="images/icons/radio-btn-check.svg" alt="Checked Icon"/>
+                                    </span>
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="golden-val_yes-4 val_answer-body">
+                                    <div class="for-information">
+                                        <div>
+                                            <div class="form-group">
+                                                <label for="golden-val_yes-4-sel-date">Select Date</label>
+                                                <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                                       id="golden-val_yes-4-sel-date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="golden-val_no-4 val_answer-body">
+                                    <div class="for-information">
+                                        <div>
+                                            <div class="select-content">
+                                                <label for="golden-select_rason">Select The rason</label>
+                                                <select name="golden-select_rason" id="golden-select_rason"
+                                                        class="custom-select sources"
+                                                        placeholder="Client rescheduled">
+                                                    <option value="val-1">Value 1</option>
+                                                    <option value="val-2">Value 2</option>
+                                                    <option value="val-3">Value 3</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="golden-val_no-4-sel-date">Select Date</label>
+                                                <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                                       id="golden-val_no-4-sel-date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--***************************************************************************************-->
+                        <div class="case-content question-item">
+                            <h4 class="cont-name">
+                                Has the policy been delivered to the client?
+                            </h4>
+                            <div class="custom-radios">
+                                <div>
+                                    <input type="radio" class="val_answer" id="golden-val_yes-5"
+                                           name="golden-val_answer-5"
+                                           value="golden-val_yes-5" checked>
+                                    <label for="golden-val_yes-5">
+                                    <span>
+                                        <img src="images/icons/radio-btn-check.svg" alt="Checked Icon"/>
+                                    </span>
+                                        Yes
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" class="val_answer" id="golden-val_no-5"
+                                           name="golden-val_answer-5"
+                                           value="golden-val_no-5">
+                                    <label for="golden-val_no-5">
+                                    <span>
+                                        <img src="images/icons/radio-btn-check.svg" alt="Checked Icon"/>
+                                    </span>
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="golden-val_yes-5 val_answer-body">
+                                    <div class="for-information">
+                                        <div>
+                                            <div class="form-group">
+                                                <label for="golden-val_yes-5-sel-date">Select Date</label>
+                                                <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                                       id="golden-val_yes-5-sel-date">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="golden-val_no-5 val_answer-body">
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--***************************************************************************************-->
+
+                        <div class="for-information">
+                            <div class="buttons_bar">
+                                <button class="light-btn-style">Cancel</button>
+                                <button type="submit" class="site-btn-style">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="opm type_of_case-body-item hide">
+                        <p class="desc-info">
+                            Commission rates for this case: James Smith, 50%; David Johan (N7N-94679), 25%; Angela Malis
+                            (Z14-6843C), 13/12%; Zach Parry (Z14-1402D), 12/13%. (Note: because you can only enter whole
+                            numbers, you will need to enter 12% for either Zach or Angela and 13% for the other. Please
+                            alternate these numbers between cases.)
+                            <span>
+                                If you have any questions or concerns about the OPM illustration
+                                (or you are not receiving it as quickly as you’d like), please contact Fred Bates at
+                                fred@brokersedgeal.com. Once you receive the spreadsheet, you can use it to generate
+                                the OPM sales PDF by filling out the form at fortunefirm.com/opm. The password is
+                                <i>downwithopm</i>.
+                            </span>
+                        </p>
+                        <div class="for-information">
+                            <div>
+                                <h3>
+                                    Client Information
+                                </h3>
+                                <div class="form-group">
+                                    <label for="client-opm_f_name">First name</label>
+                                    <input type="text" placeholder="First Name" id="client-opm_f_name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-opm_l_name">Last name</label>
+                                    <input type="text" placeholder="Last name" id="client-opm_l_name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-opm_e_address">Email address</label>
+                                    <input type="email" placeholder="Email address" id="client-opm_e_address">
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-opm_p_number">Phone number</label>
+                                    <input type="number" placeholder="Phone number" id="client-opm_p_number">
+                                </div>
+                                <div class="form-group ">
+                                    <label for="client-opm_date_birth">Date <span class="lowercase">of</span>
+                                        Birth</label>
+                                    <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                           id="client-opm_date_birth">
+
+                                </div>
+                                <div class="select-content">
+                                    <label for="client-opm_gender">Gender</label>
+                                    <div class="custom-select-wrapper">
+                                        <select name="client-opm_gender" id="client-opm_gender"
+                                                class="custom-select sources"
+                                                placeholder="Select gender">
+                                            <option value="val-male">Male</option>
+                                            <option value="val-female">Female</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkBox-btn-styles">
+                            <div class="form-check">
+                                <input type="checkbox" id="consult-opm-has-been-done-checkbox">
+                                <label for="consult-opm-has-been-done-checkbox">
+                                                        <span>
+                                                            <svg class="checkbox" viewBox="0 0 40 40">
+                                                                <defs>
+                                                                    <linearGradient id="gradient" x1="0" y1="0" x2="1"
+                                                                                    y2="1">
+                                                                        <stop offset="0%" stop-color="#459290"></stop>
+                                                                        <stop offset="100%" stop-color="#459290"></stop>
+                                                                    </linearGradient>
+                                                                </defs>
+                                                                <rect x="2" y="2" width="36" height="36"></rect>
+                                                                <rect id="colors" x="2" y="2" width="36"
+                                                                      height="36"></rect>
+                                                                <polyline points="9,22 18,30 32,9"></polyline>
+                                                            </svg>
+                                                        </span>
+                                    <span>
+                                                            The initial consultation has been done.
+                                                        </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="for-information">
+                            <div>
+                                <div class="form-group">
+                                    <label for="opm-consultation-date">consultation Date</label>
+                                    <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                           id="opm-consultation-date">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="case-content during_consultation">
+                            <h4 class="cont-name">During your initial consultation, did you gather all of the
+                                following
+                                information about client</h4>
+                            <div>
+                                <a href="#">Existing insurance?</a>
+                                <a href="#">Biographical information about a spouse, if any?</a>
+                                <a href="#">Investments?</a>
+                                <a href="#">Qualified accounts?</a>
+                                <a href="#">Are you confident that the IGIC is the best option for the client?</a>
+                            </div>
+                        </div>
+                        <!--***************************************************************************************-->
+                        <div class="case-content question-item quest-1">
+                            <h4 class="cont-name">
+                                Have you set up a follow-up appointment for an OPM spreadsheet review?
+                            </h4>
+                            <div class="custom-radios">
+                                <div>
+                                    <input type="radio" class="val_answer" id="opm-val_yes-1" name="opm-val_answer-1"
+                                           value="opm-val_yes-1" checked>
+                                    <label for="opm-val_yes-1">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        Yes
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" class="val_answer" id="opm-val_no-1" name="opm-val_answer-1"
+                                           value="opm-val_no-1">
+                                    <label for="opm-val_no-1">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="opm-val_yes-1 val_answer-body">
+                                    <div class="for-information">
+                                        <div>
+                                            <div class="form-group">
+                                                <label for="opm-val_yes-1-sel-date">Select Date</label>
+                                                <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                                       id="opm-val_yes-1-sel-date">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="opm-val_yes-1-sel-time">Select Time</label>
+                                                <input type="time" value="12:00" id="opm-val_yes-1-sel-time">
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="opm-val_no-1 val_answer-body">
+                                    <a href="#">Please set up a follow up appointment and then come back and enter it
+                                        into the system.</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--***************************************************************************************-->
+                        <div class="case-content question-item">
+                            <h4 class="cont-name">
+                                Have you requested an OPM spreadsheet?
+                            </h4>
+                            <div class="custom-radios">
+                                <div>
+                                    <input type="radio" class="val_answer" id="opm-val_yes-2" name="opm-val_answer-2"
+                                           value="opm-val_yes-2" checked>
+                                    <label for="opm-val_yes-2">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        Yes
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" class="val_answer" id="opm-val_no-2" name="opm-val_answer-2"
+                                           value="opm-val_no-2">
+                                    <label for="opm-val_no-2">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="opm-val_yes-2 val_answer-body">
+                                    <div class="for-information">
+                                        <div>
+                                            <div class="form-group">
+                                                <label for="opm-val_yes-2-sel-date">Select Date</label>
+                                                <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                                       id="opm-val_yes-2-sel-date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="opm-val_no-2 val_answer-body">
+                                    <a href="#">Please request an OPM spreadsheet and then come back and mark that it
+                                        has been requested.</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--***************************************************************************************-->
+                        <div class="case-content question-item">
+                            <h4 class="cont-name">
+                                Were you able to conduct the OPM spreadsheet appointment with client?
+                            </h4>
+                            <div class="custom-radios">
+                                <div>
+                                    <input type="radio" class="val_answer" id="opm-val_yes-3" name="opm-val_answer-3"
+                                           value="opm-val_yes-3" checked>
+                                    <label for="opm-val_yes-3">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        Yes
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" class="val_answer" id="opm-val_no-3" name="opm-val_answer-3"
+                                           value="opm-val_no-3">
+                                    <label for="opm-val_no-3">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="opm-val_yes-3 val_answer-body">
+                                    <div class="for-information">
+                                        <div>
+                                            <div class="form-group">
+                                                <label for="opm-val_yes-3-sel-date">Select Date</label>
+                                                <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                                       id="opm-val_yes-3-sel-date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="opm-val_no-3 val_answer-body">
+                                    <div class="for-information">
+                                        <div>
+                                            <div class="select-content">
+                                                <label for="opm-select_rason">Select The rason</label>
+                                                <select name="opm-select_rason" id="opm-select_rason"
+                                                        class="custom-select sources"
+                                                        placeholder="Client rescheduled">
+                                                    <option value="val-1">Value 1</option>
+                                                    <option value="val-2">Value 2</option>
+                                                    <option value="val-3">Value 3</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="opm-val_no-3-sel-date">Select Date</label>
+                                                <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                                       id="opm-val_no-3-sel-date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--***************************************************************************************-->
+                        <div class="case-content question-item">
+                            <h4 class="cont-name">
+                                Has the policy been delivered to the client?
+                            </h4>
+                            <div class="custom-radios">
+                                <div>
+                                    <input type="radio" class="val_answer" id="opm-val_yes-4" name="opm-val_answer-4"
+                                           value="opm-val_yes-4" checked>
+                                    <label for="opm-val_yes-4">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        Yes
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" class="val_answer" id="opm-val_no-4" name="opm-val_answer-4"
+                                           value="opm-val_no-4">
+                                    <label for="opm-val_no-4">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="opm-val_yes-4 val_answer-body">
+                                    <div class="for-information">
+                                        <div>
+                                            <div class="form-group">
+                                                <label for="opm-val_yes-4-sel-date">Select Date</label>
+                                                <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                                       id="opm-val_yes-4-sel-date">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="opm-val_no-4 val_answer-body">
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--***************************************************************************************-->
+                        <div class="for-information">
+                            <div class="buttons_bar">
+                                <button class="light-btn-style">Cancel</button>
+                                <button type="submit" class="site-btn-style">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="roll_igic type_of_case-body-item hide">
+                        <p class="desc-info">
+                            Commission rates for this case: James Smith, 50%; Angela Malis (Z14-6843C), 25%; Zach Parry (Z14-1402D), 25%.
+                        </p>
+                        <div class="for-information">
+                            <div>
+                                <h3>
+                                    Client Information
+                                </h3>
+                                <div class="form-group">
+                                    <label for="client-roll_igic_f_name">First name</label>
+                                    <input type="text" placeholder="First Name" id="client-roll_igic_f_name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-roll_igic_l_name">Last name</label>
+                                    <input type="text" placeholder="Last name" id="client-roll_igic_l_name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-roll_igic_e_address">Email address</label>
+                                    <input type="email" placeholder="Email address" id="client-roll_igic_e_address">
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-roll_igic_p_number">Phone number</label>
+                                    <input type="number" placeholder="Phone number" id="client-roll_igic_p_number">
+                                </div>
+                                <div class="form-group ">
+                                    <label for="client-roll_igic_date_birth">Date <span class="lowercase">of</span>
+                                        Birth</label>
+                                    <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                           id="client-roll_igic_date_birth">
+
+                                </div>
+                                <div class="select-content">
+                                    <label for="client-roll_igic_gender">Gender</label>
+                                    <div class="custom-select-wrapper">
+                                        <select name="client-roll_igic_gender" id="client-roll_igic_gender"
+                                                class="custom-select sources"
+                                                placeholder="Select gender">
+                                            <option value="val-male">Male</option>
+                                            <option value="val-female">Female</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkBox-btn-styles">
+                            <div class="form-check">
+                                <input type="checkbox" id="consult-roll_igic-has-been-done-checkbox">
+                                <label for="consult-roll_igic-has-been-done-checkbox">
+                                                        <span>
+                                                            <svg class="checkbox" viewBox="0 0 40 40">
+                                                                <defs>
+                                                                    <linearGradient id="gradient" x1="0" y1="0" x2="1"
+                                                                                    y2="1">
+                                                                        <stop offset="0%" stop-color="#459290"></stop>
+                                                                        <stop offset="100%" stop-color="#459290"></stop>
+                                                                    </linearGradient>
+                                                                </defs>
+                                                                <rect x="2" y="2" width="36" height="36"></rect>
+                                                                <rect id="colors" x="2" y="2" width="36"
+                                                                      height="36"></rect>
+                                                                <polyline points="9,22 18,30 32,9"></polyline>
+                                                            </svg>
+                                                        </span>
+                                    <span>
+                                                            The initial consultation has been done.
+                                                        </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="for-information">
+                            <div>
+                                <div class="form-group">
+                                    <label for="roll_igic-consultation-date">consultation Date</label>
+                                    <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                           id="roll_igic-consultation-date">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="case-content during_consultation">
+                            <h4 class="cont-name">During your initial consultation, did you gather all of the
+                                following
+                                information about client</h4>
+                            <div>
+                                <a href="#">Existing insurance?</a>
+                                <a href="#">Biographical information about a spouse, if any?</a>
+                                <a href="#">Investments?</a>
+                                <a href="#">Qualified accounts?</a>
+                                <a href="#">Are you confident that the IGIC is the best option for the client?</a>
+                            </div>
+                        </div>
+                        <!--***************************************************************************************-->
+                        <div class="case-content question-item quest-1">
+                            <h4 class="cont-name">
+                                Have you set up a follow-up appointment for an illustration review?
+                            </h4>
+                            <div class="custom-radios">
+                                <div>
+                                    <input type="radio" class="val_answer" id="roll_igic-val_yes-1" name="roll_igic-val_answer-1"
+                                           value="roll_igic-val_yes-1" checked>
+                                    <label for="roll_igic-val_yes-1">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        Yes
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" class="val_answer" id="roll_igic-val_no-1" name="roll_igic-val_answer-1"
+                                           value="roll_igic-val_no-1">
+                                    <label for="roll_igic-val_no-1">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="roll_igic-val_yes-1 val_answer-body">
+                                    <div class="for-information">
+                                        <div>
+                                            <div class="form-group">
+                                                <label for="roll_igic-val_yes-1-sel-date">Select Date</label>
+                                                <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                                       id="roll_igic-val_yes-1-sel-date">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="roll_igic-val_yes-1-sel-time">Select Time</label>
+                                                <input type="time" value="12:00" id="roll_igic-val_yes-1-sel-time">
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="roll_igic-val_no-1 val_answer-body">
+                                    <a href="#">Please set up a follow up appointment and then come back and enter it
+                                        into the system.</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--***************************************************************************************-->
+                        <div class="case-content question-item">
+                            <h4 class="cont-name">
+                                Have you sent referral to the Fortune Law Firm?
+                            </h4>
+                            <div class="custom-radios">
+                                <div>
+                                    <input type="radio" class="val_answer" id="roll_igic-val_yes-2" name="roll_igic-val_answer-2"
+                                           value="roll_igic-val_yes-2" checked>
+                                    <label for="roll_igic-val_yes-2">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        Yes
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" class="val_answer" id="roll_igic-val_no-2" name="roll_igic-val_answer-2"
+                                           value="roll_igic-val_no-2">
+                                    <label for="roll_igic-val_no-2">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="roll_igic-val_yes-2 val_answer-body">
+                                    <div class="for-information">
+                                        <div>
+                                            <div class="form-group">
+                                                <label for="roll_igic-val_yes-2-sel-date">Select Date</label>
+                                                <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                                       id="roll_igic-val_yes-2-sel-date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="roll_igic-val_no-2 val_answer-body">
+                                    <a href="#">Please request an illustration and then come back and mark that it has
+                                        been requested.</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--***************************************************************************************-->
+                        <div class="case-content question-item">
+                            <h4 class="cont-name">
+                                Have you requested an illustration?
+                            </h4>
+                            <div class="custom-radios">
+                                <div>
+                                    <input type="radio" class="val_answer" id="roll_igic-val_yes-3" name="roll_igic-val_answer-3"
+                                           value="roll_igic-val_yes-3" checked>
+                                    <label for="roll_igic-val_yes-3">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        Yes
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" class="val_answer" id="roll_igic-val_no-3" name="roll_igic-val_answer-3"
+                                           value="roll_igic-val_no-3">
+                                    <label for="roll_igic-val_no-3">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="roll_igic-val_yes-3 val_answer-body">
+                                    <div class="for-information">
+                                        <div>
+                                            <div class="form-group">
+                                                <label for="roll_igic-val_yes-3-sel-date">Select Date</label>
+                                                <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                                       id="roll_igic-val_yes-3-sel-date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="roll_igic-val_no-3 val_answer-body">
+                                    <a href="#">Please request an illustration and then come back and mark that it has
+                                        been requested.</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--***************************************************************************************-->
+                        <div class="case-content question-item">
+                            <h4 class="cont-name">
+                                Were you able to conduct the illustration-review appointment with client?
+                            </h4>
+                            <div class="custom-radios">
+                                <div>
+                                    <input type="radio" class="val_answer" id="roll_igic-val_yes-4" name="roll_igic-val_answer-4"
+                                           value="roll_igic-val_yes-4" checked>
+                                    <label for="roll_igic-val_yes-4">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        Yes
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" class="val_answer" id="roll_igic-val_no-4" name="roll_igic-val_answer-4"
+                                           value="roll_igic-val_no-4">
+                                    <label for="roll_igic-val_no-4">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="roll_igic-val_yes-4 val_answer-body">
+                                    <div class="for-information">
+                                        <div>
+                                            <div class="form-group">
+                                                <label for="roll_igic-val_yes-4-sel-date">Select Date</label>
+                                                <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                                       id="roll_igic-val_yes-4-sel-date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="roll_igic-val_no-4 val_answer-body">
+                                    <div class="for-information">
+                                        <div>
+                                            <div class="select-content">
+                                                <label for="roll_igic-select_rason">Select The rason</label>
+                                                <select name="roll_igic-select_rason" id="roll_igic-select_rason"
+                                                        class="custom-select sources"
+                                                        placeholder="Client rescheduled">
+                                                    <option value="val-1">Value 1</option>
+                                                    <option value="val-2">Value 2</option>
+                                                    <option value="val-3">Value 3</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="roll_igic-val_no-4-sel-date">Select Date</label>
+                                                <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                                       id="roll_igic-val_no-4-sel-date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--***************************************************************************************-->
+                        <div class="case-content question-item">
+                            <h4 class="cont-name">
+                                Has the policy been delivered to the client?
+                            </h4>
+                            <div class="custom-radios">
+                                <div>
+                                    <input type="radio" class="val_answer" id="roll_igic-val_yes-5" name="roll_igic-val_answer-5"
+                                           value="roll_igic-val_yes-5" checked>
+                                    <label for="roll_igic-val_yes-5">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        Yes
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" class="val_answer" id="roll_igic-val_no-5" name="roll_igic-val_answer-5"
+                                           value="roll_igic-val_no-5">
+                                    <label for="roll_igic-val_no-5">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="roll_igic-val_yes-5 val_answer-body">
+                                    <div class="for-information">
+                                        <div>
+                                            <div class="form-group">
+                                                <label for="roll_igic-val_yes-5-sel-date">Select Date</label>
+                                                <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                                       id="roll_igic-val_yes-5-sel-date">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="roll_igic-val_no-5 val_answer-body">
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--***************************************************************************************-->
+                        <div class="for-information">
+                            <div class="buttons_bar">
+                                <button class="light-btn-style">Cancel</button>
+                                <button type="submit" class="site-btn-style">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="roll_igic-debt type_of_case-body-item hide">
+                        <p class="desc-info">
+                            Commission rates for this case: James Smith, 25%; Angela Malis (Z14-6843C), 25%; Zach Parry (Z14-1402D), 25%.
+                        </p>
+                        <div class="for-information">
+                            <div>
+                                <h3>
+                                    Client Information
+                                </h3>
+                                <div class="form-group">
+                                    <label for="client-roll_igic_debt_f_name">First name</label>
+                                    <input type="text" placeholder="First Name" id="client-roll_igic_debt_f_name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-roll_igic_debt_l_name">Last name</label>
+                                    <input type="text" placeholder="Last name" id="client-roll_igic_debt_l_name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-roll_igic_debt_e_address">Email address</label>
+                                    <input type="email" placeholder="Email address" id="client-roll_igic_debt_e_address">
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-roll_igic_debt_p_number">Phone number</label>
+                                    <input type="number" placeholder="Phone number" id="client-roll_igic_debt_p_number">
+                                </div>
+                                <div class="form-group ">
+                                    <label for="client-roll_igic_debt_date_birth">Date <span class="lowercase">of</span>
+                                        Birth</label>
+                                    <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                           id="client-roll_igic_debt_date_birth">
+
+                                </div>
+                                <div class="select-content">
+                                    <label for="client-roll_igic_debt_gender">Gender</label>
+                                    <div class="custom-select-wrapper">
+                                        <select name="client-roll_igic_debt_gender" id="client-roll_igic_debt_gender"
+                                                class="custom-select sources"
+                                                placeholder="Select gender">
+                                            <option value="val-male">Male</option>
+                                            <option value="val-female">Female</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkBox-btn-styles">
+                            <div class="form-check">
+                                <input type="checkbox" id="consult-roll_igic_debt-has-been-done-checkbox">
+                                <label for="consult-roll_igic_debt-has-been-done-checkbox">
+                                                        <span>
+                                                            <svg class="checkbox" viewBox="0 0 40 40">
+                                                                <defs>
+                                                                    <linearGradient id="gradient" x1="0" y1="0" x2="1"
+                                                                                    y2="1">
+                                                                        <stop offset="0%" stop-color="#459290"></stop>
+                                                                        <stop offset="100%" stop-color="#459290"></stop>
+                                                                    </linearGradient>
+                                                                </defs>
+                                                                <rect x="2" y="2" width="36" height="36"></rect>
+                                                                <rect id="colors" x="2" y="2" width="36"
+                                                                      height="36"></rect>
+                                                                <polyline points="9,22 18,30 32,9"></polyline>
+                                                            </svg>
+                                                        </span>
+                                    <span>
+                                                            The initial consultation has been done.
+                                                        </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="for-information">
+                            <div>
+                                <div class="form-group">
+                                    <label for="roll_igic_debt-consultation-date">consultation Date</label>
+                                    <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                           id="roll_igic_debt-consultation-date">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="case-content during_consultation">
+                            <h4 class="cont-name">During your initial consultation, did you gather all of the
+                                following
+                                information about client</h4>
+                            <div>
+                                <a href="#">Existing insurance?</a>
+                                <a href="#">Biographical information about a spouse, if any?</a>
+                                <a href="#">Investments?</a>
+                                <a href="#">Qualified accounts?</a>
+                                <a href="#">Are you confident that the IGIC is the best option for the client?</a>
+                            </div>
+                        </div>
+                        <!--***************************************************************************************-->
+                        <div class="case-content question-item quest-1">
+                            <h4 class="cont-name">
+                                Have you set up a follow-up appointment for an illustration review?
+                            </h4>
+                            <div class="custom-radios">
+                                <div>
+                                    <input type="radio" class="val_answer" id="roll_igic_debt-val_yes-1" name="roll_igic_debt-val_answer-1"
+                                           value="roll_igic_debt-val_yes-1" checked>
+                                    <label for="roll_igic_debt-val_yes-1">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        Yes
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" class="val_answer" id="roll_igic_debt-val_no-1" name="roll_igic_debt-val_answer-1"
+                                           value="roll_igic_debt-val_no-1">
+                                    <label for="roll_igic_debt-val_no-1">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="roll_igic_debt-val_yes-1 val_answer-body">
+                                    <div class="for-information">
+                                        <div>
+                                            <div class="form-group">
+                                                <label for="roll_igic_debt-val_yes-1-sel-date">Select Date</label>
+                                                <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                                       id="roll_igic_debt-val_yes-1-sel-date">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="roll_igic_debt-val_yes-1-sel-time">Select Time</label>
+                                                <input type="time" value="12:00" id="roll_igic_debt-val_yes-1-sel-time">
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="roll_igic_debt-val_no-1 val_answer-body">
+                                    <a href="#">Please set up a follow up appointment and then come back and enter it
+                                        into the system.</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--***************************************************************************************-->
+                        <div class="case-content question-item">
+                            <h4 class="cont-name">
+                                Have you sent referral to the Fortune Law Firm?
+                            </h4>
+                            <div class="custom-radios">
+                                <div>
+                                    <input type="radio" class="val_answer" id="roll_igic_debt-val_yes-2" name="roll_igic_debt-val_answer-2"
+                                           value="roll_igic_debt-val_yes-2" checked>
+                                    <label for="roll_igic_debt-val_yes-2">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        Yes
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" class="val_answer" id="roll_igic_debt-val_no-2" name="roll_igic_debt-val_answer-2"
+                                           value="roll_igic_debt-val_no-2">
+                                    <label for="roll_igic_debt-val_no-2">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="roll_igic_debt-val_yes-2 val_answer-body">
+                                    <div class="for-information">
+                                        <div>
+                                            <div class="form-group">
+                                                <label for="roll_igic_debt-val_yes-2-sel-date">Select Date</label>
+                                                <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                                       id="roll_igic_debt-val_yes-2-sel-date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="roll_igic_debt-val_no-2 val_answer-body">
+                                    <a href="#">Please request an illustration and then come back and mark that it has
+                                        been requested.</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--***************************************************************************************-->
+                        <div class="case-content question-item">
+                            <h4 class="cont-name">
+                                Have you requested an illustration?
+                            </h4>
+                            <div class="custom-radios">
+                                <div>
+                                    <input type="radio" class="val_answer" id="roll_igic_debt-val_yes-3" name="roll_igic_debt-val_answer-3"
+                                           value="roll_igic_debt-val_yes-3" checked>
+                                    <label for="roll_igic_debt-val_yes-3">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        Yes
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" class="val_answer" id="roll_igic_debt-val_no-3" name="roll_igic_debt-val_answer-3"
+                                           value="roll_igic_debt-val_no-3">
+                                    <label for="roll_igic_debt-val_no-3">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="roll_igic_debt-val_yes-3 val_answer-body">
+                                    <div class="for-information">
+                                        <div>
+                                            <div class="form-group">
+                                                <label for="roll_igic_debt-val_yes-3-sel-date">Select Date</label>
+                                                <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                                       id="roll_igic_debt-val_yes-3-sel-date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="roll_igic_debt-val_no-3 val_answer-body">
+                                    <a href="#">Please request an illustration and then come back and mark that it has
+                                        been requested.</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--***************************************************************************************-->
+                        <div class="case-content question-item">
+                            <h4 class="cont-name">
+                                Were you able to conduct the illustration-review appointment with client?
+                            </h4>
+                            <div class="custom-radios">
+                                <div>
+                                    <input type="radio" class="val_answer" id="roll_igic_debt-val_yes-4" name="roll_igic_debt-val_answer-4"
+                                           value="roll_igic_debt-val_yes-4" checked>
+                                    <label for="roll_igic_debt-val_yes-4">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        Yes
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" class="val_answer" id="roll_igic_debt-val_no-4" name="roll_igic_debt-val_answer-4"
+                                           value="roll_igic_debt-val_no-4">
+                                    <label for="roll_igic_debt-val_no-4">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="roll_igic_debt-val_yes-4 val_answer-body">
+                                    <div class="for-information">
+                                        <div>
+                                            <div class="form-group">
+                                                <label for="roll_igic_debt-val_yes-4-sel-date">Select Date</label>
+                                                <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                                       id="roll_igic_debt-val_yes-4-sel-date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="roll_igic_debt-val_no-4 val_answer-body">
+                                    <div class="for-information">
+                                        <div>
+                                            <div class="select-content">
+                                                <label for="roll_igic_debt-select_rason">Select The rason</label>
+                                                <select name="roll_igic_debt-select_rason" id="roll_igic_debt-select_rason"
+                                                        class="custom-select sources"
+                                                        placeholder="Client rescheduled">
+                                                    <option value="val-1">Value 1</option>
+                                                    <option value="val-2">Value 2</option>
+                                                    <option value="val-3">Value 3</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="roll_igic_debt-val_no-4-sel-date">Select Date</label>
+                                                <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                                       id="roll_igic_debt-val_no-4-sel-date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--***************************************************************************************-->
+                        <div class="case-content question-item">
+                            <h4 class="cont-name">
+                                Has the policy been delivered to the client?
+                            </h4>
+                            <div class="custom-radios">
+                                <div>
+                                    <input type="radio" class="val_answer" id="roll_igic_debt-val_yes-5" name="roll_igic_debt-val_answer-5"
+                                           value="roll_igic_debt-val_yes-5" checked>
+                                    <label for="roll_igic_debt-val_yes-5">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        Yes
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" class="val_answer" id="roll_igic_debt-val_no-5" name="roll_igic_debt-val_answer-5"
+                                           value="roll_igic_debt-val_no-5">
+                                    <label for="roll_igic_debt-val_no-5">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="roll_igic_debt-val_yes-5 val_answer-body">
+                                    <div class="for-information">
+                                        <div>
+                                            <div class="form-group">
+                                                <label for="roll_igic_debt-val_yes-5-sel-date">Select Date</label>
+                                                <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                                       id="roll_igic_debt-val_yes-5-sel-date">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="roll_igic_debt-val_no-5 val_answer-body">
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--***************************************************************************************-->
+                        <div class="for-information">
+                            <div class="buttons_bar">
+                                <button class="light-btn-style">Cancel</button>
+                                <button type="submit" class="site-btn-style">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="roll_igic-opm type_of_case-body-item hide">
+                        <p class="desc-info">
+                            Commission rates for this case: James Smith, 50%; David Johan (N7N-94679), 25%; Angela Malis (Z14-6843C), 25%; Zach Parry (Z14-1402D), 25%.
+                        </p>
+                        <div class="for-information">
+                            <div>
+                                <h3>
+                                    Client Information
+                                </h3>
+                                <div class="form-group">
+                                    <label for="client-roll_igic_opm_f_name">First name</label>
+                                    <input type="text" placeholder="First Name" id="client-roll_igic_opm_f_name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-roll_igic_opm_l_name">Last name</label>
+                                    <input type="text" placeholder="Last name" id="client-roll_igic_opm_l_name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-roll_igic_opm_e_address">Email address</label>
+                                    <input type="email" placeholder="Email address" id="client-roll_igic_opm_e_address">
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-roll_igic_opm_p_number">Phone number</label>
+                                    <input type="number" placeholder="Phone number" id="client-roll_igic_opm_p_number">
+                                </div>
+                                <div class="form-group ">
+                                    <label for="client-roll_igic_opm_date_birth">Date <span class="lowercase">of</span>
+                                        Birth</label>
+                                    <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                           id="client-roll_igic_opm_date_birth">
+
+                                </div>
+                                <div class="select-content">
+                                    <label for="client-roll_igic_opm_gender">Gender</label>
+                                    <div class="custom-select-wrapper">
+                                        <select name="client-roll_igic_opm_gender" id="client-roll_igic_opm_gender"
+                                                class="custom-select sources"
+                                                placeholder="Select gender">
+                                            <option value="val-male">Male</option>
+                                            <option value="val-female">Female</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkBox-btn-styles">
+                            <div class="form-check">
+                                <input type="checkbox" id="consult-roll_igic_opm-has-been-done-checkbox">
+                                <label for="consult-roll_igic_opm-has-been-done-checkbox">
+                                                        <span>
+                                                            <svg class="checkbox" viewBox="0 0 40 40">
+                                                                <defs>
+                                                                    <linearGradient id="gradient" x1="0" y1="0" x2="1"
+                                                                                    y2="1">
+                                                                        <stop offset="0%" stop-color="#459290"></stop>
+                                                                        <stop offset="100%" stop-color="#459290"></stop>
+                                                                    </linearGradient>
+                                                                </defs>
+                                                                <rect x="2" y="2" width="36" height="36"></rect>
+                                                                <rect id="colors" x="2" y="2" width="36"
+                                                                      height="36"></rect>
+                                                                <polyline points="9,22 18,30 32,9"></polyline>
+                                                            </svg>
+                                                        </span>
+                                    <span>
+                                                            The initial consultation has been done.
+                                                        </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="for-information">
+                            <div>
+                                <div class="form-group">
+                                    <label for="roll_igic_opm-consultation-date">consultation Date</label>
+                                    <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                           id="roll_igic_opm-consultation-date">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="case-content during_consultation">
+                            <h4 class="cont-name">During your initial consultation, did you gather all of the
+                                following
+                                information about client</h4>
+                            <div>
+                                <a href="#">Existing insurance?</a>
+                                <a href="#">Biographical information about a spouse, if any?</a>
+                                <a href="#">Investments?</a>
+                                <a href="#">Qualified accounts?</a>
+                                <a href="#">Are you confident that the IGIC is the best option for the client?</a>
+                            </div>
+                        </div>
+                        <!--***************************************************************************************-->
+                        <div class="case-content question-item quest-1">
+                            <h4 class="cont-name">
+                                Have you set up a follow-up appointment for an illustration review?
+                            </h4>
+                            <div class="custom-radios">
+                                <div>
+                                    <input type="radio" class="val_answer" id="roll_igic_opm-val_yes-1" name="roll_igic_opm-val_answer-1"
+                                           value="roll_igic_opm-val_yes-1" checked>
+                                    <label for="roll_igic_opm-val_yes-1">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        Yes
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" class="val_answer" id="roll_igic_opm-val_no-1" name="roll_igic_opm-val_answer-1"
+                                           value="roll_igic_opm-val_no-1">
+                                    <label for="roll_igic_opm-val_no-1">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="roll_igic_opm-val_yes-1 val_answer-body">
+                                    <div class="for-information">
+                                        <div>
+                                            <div class="form-group">
+                                                <label for="roll_igic_opm-val_yes-1-sel-date">Select Date</label>
+                                                <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                                       id="roll_igic_opm-val_yes-1-sel-date">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="roll_igic_opm-val_yes-1-sel-time">Select Time</label>
+                                                <input type="time" value="12:00" id="roll_igic_opm-val_yes-1-sel-time">
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="roll_igic_opm-val_no-1 val_answer-body">
+                                    <a href="#">Please set up a follow up appointment and then come back and enter it
+                                        into the system.</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--***************************************************************************************-->
+                        <div class="case-content question-item">
+                            <h4 class="cont-name">
+                                Have you sent referral to the Fortune Law Firm?
+                            </h4>
+                            <div class="custom-radios">
+                                <div>
+                                    <input type="radio" class="val_answer" id="roll_igic_opm-val_yes-2" name="roll_igic_opm-val_answer-2"
+                                           value="roll_igic_opm-val_yes-2" checked>
+                                    <label for="roll_igic_opm-val_yes-2">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        Yes
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" class="val_answer" id="roll_igic_opm-val_no-2" name="roll_igic_opm-val_answer-2"
+                                           value="roll_igic_opm-val_no-2">
+                                    <label for="roll_igic_opm-val_no-2">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="roll_igic_opm-val_yes-2 val_answer-body">
+                                    <div class="for-information">
+                                        <div>
+                                            <div class="form-group">
+                                                <label for="roll_igic_opm-val_yes-2-sel-date">Select Date</label>
+                                                <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                                       id="roll_igic_opm-val_yes-2-sel-date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="roll_igic_opm-val_no-2 val_answer-body">
+                                    <a href="#">Please request an illustration and then come back and mark that it has
+                                        been requested.</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--***************************************************************************************-->
+                        <div class="case-content question-item">
+                            <h4 class="cont-name">
+                                Have you requested an illustration?
+                            </h4>
+                            <div class="custom-radios">
+                                <div>
+                                    <input type="radio" class="val_answer" id="roll_igic_opm-val_yes-3" name="roll_igic_opm-val_answer-3"
+                                           value="roll_igic_opm-val_yes-3" checked>
+                                    <label for="roll_igic_opm-val_yes-3">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        Yes
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" class="val_answer" id="roll_igic_opm-val_no-3" name="roll_igic_opm-val_answer-3"
+                                           value="roll_igic_opm-val_no-3">
+                                    <label for="roll_igic_opm-val_no-3">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="roll_igic_opm-val_yes-3 val_answer-body">
+                                    <div class="for-information">
+                                        <div>
+                                            <div class="form-group">
+                                                <label for="roll_igic_opm-val_yes-3-sel-date">Select Date</label>
+                                                <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                                       id="roll_igic_opm-val_yes-3-sel-date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="roll_igic_opm-val_no-3 val_answer-body">
+                                    <a href="#">Please request an illustration and then come back and mark that it has
+                                        been requested.</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--***************************************************************************************-->
+                        <div class="case-content question-item">
+                            <h4 class="cont-name">
+                                Were you able to conduct the illustration-review appointment with client?
+                            </h4>
+                            <div class="custom-radios">
+                                <div>
+                                    <input type="radio" class="val_answer" id="roll_igic_opm-val_yes-4" name="roll_igic_opm-val_answer-4"
+                                           value="roll_igic_opm-val_yes-4" checked>
+                                    <label for="roll_igic_opm-val_yes-4">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        Yes
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" class="val_answer" id="roll_igic_opm-val_no-4" name="roll_igic_opm-val_answer-4"
+                                           value="roll_igic_opm-val_no-4">
+                                    <label for="roll_igic_opm-val_no-4">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="roll_igic_opm-val_yes-4 val_answer-body">
+                                    <div class="for-information">
+                                        <div>
+                                            <div class="form-group">
+                                                <label for="roll_igic_opm-val_yes-4-sel-date">Select Date</label>
+                                                <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                                       id="roll_igic_opm-val_yes-4-sel-date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="roll_igic_opm-val_no-4 val_answer-body">
+                                    <div class="for-information">
+                                        <div>
+                                            <div class="select-content">
+                                                <label for="roll_igic_opm-select_rason">Select The rason</label>
+                                                <select name="roll_igic_opm-select_rason" id="roll_igic_opm-select_rason"
+                                                        class="custom-select sources"
+                                                        placeholder="Client rescheduled">
+                                                    <option value="val-1">Value 1</option>
+                                                    <option value="val-2">Value 2</option>
+                                                    <option value="val-3">Value 3</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="roll_igic_opm-val_no-4-sel-date">Select Date</label>
+                                                <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                                       id="roll_igic_opm-val_no-4-sel-date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--***************************************************************************************-->
+                        <div class="case-content question-item">
+                            <h4 class="cont-name">
+                                Has the policy been delivered to the client?
+                            </h4>
+                            <div class="custom-radios">
+                                <div>
+                                    <input type="radio" class="val_answer" id="roll_igic_opm-val_yes-5" name="roll_igic_opm-val_answer-5"
+                                           value="roll_igic_opm-val_yes-5" checked>
+                                    <label for="roll_igic_opm-val_yes-5">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        Yes
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" class="val_answer" id="roll_igic_opm-val_no-5" name="roll_igic_opm-val_answer-5"
+                                           value="roll_igic_opm-val_no-5">
+                                    <label for="roll_igic_opm-val_no-5">
+                                                        <span>
+                                                            <img src="images/icons/radio-btn-check.svg"
+                                                                 alt="Checked Icon"/>
+                                                        </span>
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="roll_igic_opm-val_yes-5 val_answer-body">
+                                    <div class="for-information">
+                                        <div>
+                                            <div class="form-group">
+                                                <label for="roll_igic_opm-val_yes-5-sel-date">Select Date</label>
+                                                <input type="date" value="2020-12-30" min="2020-12-30" max="2100-01-01"
+                                                       id="roll_igic_opm-val_yes-5-sel-date">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="roll_igic_opm-val_no-5 val_answer-body">
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--***************************************************************************************-->
+                        <div class="for-information">
+                            <div class="buttons_bar">
+                                <button class="light-btn-style">Cancel</button>
+                                <button type="submit" class="site-btn-style">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  /Section  -->
+        <footer>
+
+        </footer>
+    </div>
+</div>
+<script src="lib/js/jquery-3.3.1.min.js"></script>
+
+<script src="js/select.js"></script>
+<script src="js/switch-buttons.js"></script>
+<script src="js/script.js"></script>
+<script>
+
+</script>
+</body>
+</html>
